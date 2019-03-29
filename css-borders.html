@@ -1,0 +1,259 @@
+<html>
+
+<head>
+    <title>
+        CSS BORDERS
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a class="active" href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS BORDERS</h2>
+                    <h3>CSS Border Properties</h3>
+                    <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+                    <h3>Border Style</h3>
+                    <p>The border-style property specifies what kind of border to display.<br>
+                            
+                        The following values are allowed:<br>
+                            
+                        1:)-dotted - Defines a dotted border<br>
+                        2:)-dashed - Defines a dashed border<br>
+                        3:)-solid - Defines a solid border<br>
+                        4:)-double - Defines a double border<br>
+                        5:)-groove - Defines a 3D grooved border. The effect depends on the border-color value<br>
+                        6:)-ridge - Defines a 3D ridged border. The effect depends on the border-color value<br>
+                        7:)-inset - Defines a 3D inset border. The effect depends on the border-color value<br>
+                        8:)-outset - Defines a 3D outset border. The effect depends on the border-color value<vr></vr>
+                        9:)-none - Defines no border<br>
+                        10:)-hidden - Defines a hidden border<br>
+                        The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p.dotted {border-style: dotted;}
+                        p.dashed {border-style: dashed;}
+                        p.solid {border-style: solid;}
+                        p.double {border-style: double;}
+                        p.groove {border-style: groove;}
+                        p.ridge {border-style: ridge;}
+                        p.inset {border-style: inset;}
+                        p.outset {border-style: outset;}
+                        p.none {border-style: none;}
+                        p.hidden {border-style: hidden;}
+                        p.mix {border-style: dotted dashed solid double;}        
+                        </pre>
+                        <center><iframe name="border" width=800px height=500px></iframe></center></div>
+                        <center><a class="inner_b" href="BORDERS/border.html" target="border">Click here to see</a></center></div> 
+                    <h3>Border Width</h3>
+                    <p>The border-width property specifies the width of the four borders.
+                            
+                        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+                            
+                        The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p.one {
+                            border-style: solid;
+                            border-width: 5px;
+                        }
+                                
+                        p.two {
+                            border-style: solid;
+                            border-width: medium;
+                        }
+                                
+                        p.three {
+                            border-style: solid;
+                            border-width: 2px 10px 4px 20px;
+                        }             
+                            </pre>
+                            <center><iframe name="borderwidth" width=800px height=500px></iframe></center></div>
+                            <center><a class="inner_b" href="BORDERS/borderwidth.html" target="borderwidth">Click here to see</a></center></div>  
+                    <h3>Border Color</h3>
+                    <p>The border-color property is used to set the color of the four borders.<br>
+                            
+                        The color can be set by:<br>
+                            
+                        1:)-name - specify a color name, like "red"<br>
+                        2:)-Hex - specify a hex value, like "#ff0000"<br>
+                        3:)-RGB - specify a RGB value, like "rgb(255,0,0)"<br>
+                        4:)-transparent<br>
+                        The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+                            
+                            If border-color is not set, it inherits the color of the element.</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p.one {
+                            border-style: solid;
+                            border-color: red;
+                        }
+                                
+                        p.two {
+                            border-style: solid;
+                            border-color: green;
+                        }
+                                
+                        p.three {
+                            border-style: solid;
+                            border-color: red green blue yellow;
+                        }     
+                        </pre>
+                        <center><iframe name="bordercolor" width=800px height=300px></iframe></center></div>
+                        <center><a class="inner_b" href="BORDERS/bordercolor.html" target="bordercolor">Click here to see</a></center></div>
+                    <h3>Border - Individual Sides</h3>
+                    <p>From the examples above you have seen that it is possible to specify a different border for each side.
+                            
+                            In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            border-top-style: dotted;
+                            border-right-style: solid;
+                            border-bottom-style: dotted;
+                            border-left-style: solid;
+                        }
+                        
+                        </pre>
+                        <center><iframe name="borderindi" width=800px height=100px></iframe></center></div>
+                        <center><a class="inner_b" href="BORDERS/borderindi.html" target="borderindi">Click here to see</a></center></div>
+                    <p>If the border-style property has four values:<br><br>
+
+                    1:)-border-style: dotted solid double dashed;<br>
+                        i:)-top border is dotted<br>
+                        ii:)-right border is solid<br>
+                        iii:)-bottom border is double<br>
+                        iv:)-left border is dashed<br>
+                        v:)-If the border-style property has three values:<br><br>
+                            
+                    2:)-border-style: dotted solid double;<br>
+                        i:)-top border is dotted<br>
+                        ii:)-right and left borders are solid<br>
+                        iii:)-bottom border is double<br>
+                        iv:)-If the border-style property has two values:<br><br>
+                            
+                    3:)-border-style: dotted solid;<br>
+                        i:)-top and bottom borders are dotted<br>
+                        ii:)-right and left borders are solid<br>
+                        iii:)-If the border-style property has one value:<br><br>
+                            
+                    4:)-border-style: dotted;<br>
+                        i:)-all four borders are dotted<br><br>
+                        The border-style property is used in the example above. However, it also works with border-width and border-color.</p>                                                        
+                    <h3>Border - Shorthand Property</h3>
+                    <p>As you can see from the examples above, there are many properties to consider when dealing with borders.
+                            
+                            To shorten the code, it is also possible to specify all the individual border properties in one property.<br>
+                            
+                            The border property is a shorthand property for the following individual border properties:<br>
+                            
+                        1:)-border-width<br>
+                        2:)-border-style (required)<br>
+                        3:)-border-color<br></p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            border: 5px solid red;
+                        }
+                        </pre>
+                        <center><iframe name="bordershort" width=800px height=100px></iframe></center></div>
+                        <center><a class="inner_b" href="BORDERS/bordershort.html" target="bordershort">Click here to see</a></center></div>
+                    <h3>Rounded Borders</h3>
+                    <p>The border-radius property is used to add rounded borders to an element:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            border: 2px solid red;
+                            border-radius: 5px;
+                        }
+                        </pre>
+                        <center><iframe name="round" width=800px height=300px></iframe></center></div>
+                        <center><a class="inner_b" href="BORDERS/round.html" target="round">Click here to see</a></center></div>  
+                <a class="inner_b" href="css-backgrounds.html">PREVIOUS</a>
+                <a href="css-margins.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+
+                <br><br>
+                <center style="margin-left: 350px">
+                    <p><b>Webpage by Anshul Singh-1705887</b></p>
+                    <p>&copy2018 KIIT UNIVERSITY</p>
+                </center>  
+                </div>
+    </div>
+    </body>
+    
+    </html>    

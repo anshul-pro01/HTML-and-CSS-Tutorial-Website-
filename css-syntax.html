@@ -1,0 +1,224 @@
+<html>
+
+<head>
+    <title>
+        CSS SYNTAX
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a class="active" href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS SYNTAX AND SELECTORS</h2>
+                    <h3>CSS SYNTAX</h3>
+                    <p>A CSS rule-set consists of a selector and a declaration block:</p>
+                    <img src="selector.gif">
+                    <p>The selector points to the HTML element you want to style.
+
+                        The declaration block contains one or more declarations separated by semicolons.
+                        
+                        Each declaration includes a CSS property name and a value, separated by a colon.
+                        
+                        A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+                        In the following example all <p> elements will be center-aligned, with a red text color:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                    <div class="inner"><pre>
+                            p {
+                                color: red;
+                                text-align: center;
+                           }
+                      
+                    </pre> 
+                    <center><iframe name="syntax" width=800px height=100px></iframe></center>
+                   </div>
+                   <center><a class="inner_b" href="SYNTAX/syntax.html" target="syntax">Click here to see</a></center>
+                   </div>    
+                    <h3>CSS SELECTORS</h3>
+                    <p>CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.</p>  
+                    <h3>The element selector</h3>
+                    <p>The element selector selects elements based on the element name.
+                        You can select all <p> elements on a page like this (in this case, all <p> elements will be center-aligned, with a red text color):</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                            p {
+                                color: red;
+                                text-align: center;
+                            }</pre>
+                            <center><iframe name="element" width=800px height=100px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="SYNTAX/element.html" target="element">Click here to see</a></center>    
+                    </div>
+                    <h3>The id Selector</h3>
+                    <p>The id selector uses the id attribute of an HTML element to select a specific element.
+
+                        The id of an element should be unique within a page, so the id selector is used to select one unique element!
+                        
+                        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+                        The style rule below will be applied to the HTML element with id="para1":</p>  
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                            #para1 {
+                                text-align: center;
+                                color: red;
+                            }   
+                            </pre>
+                            <center><iframe name="id" width=800px height=100px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="SYNTAX/id.html" target="id">Click here to see</a></center>    
+                    </div>  
+                    <p>The class selector selects elements with a specific class attribute.
+                        
+                        To select elements with a specific class, write a period (.) character, followed by the name of the class.
+                        In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                            .center {
+                                text-align: center;
+                                color: red;
+                            }
+                            </pre></div></div>  
+                    <h3>Grouping Selectors</h3>  
+                    <p>If you have elements with the same style definitions, like this:</p>  
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                            h1 {
+                                text-align: center;
+                                color: red;
+                            }
+                            
+                            h2 {
+                                text-align: center;
+                                color: red;
+                            }
+                            
+                            p {
+                                text-align: center;
+                                color: red;
+                            }
+                        </pre></div></div>  
+                    <p>It will be better to group the selectors, to minimize the code.
+
+                        To group selectors, separate each selector with a comma.
+                        
+                        In the example below we have grouped the selectors from the code above.</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                             h1, h2, p {
+                                text-align: center;
+                                 color: red;
+                            }                                
+                            </pre>
+                            <center><iframe name="grouping" width=800px height=100px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="SYNTAX/grouping.html" target="grouping">Click here to see</a></center>    
+                    </div>  
+                     <h3>CSS Comments</h3>   
+                     <p>Comments are used to explain the code, and may help when you edit the source code at a later date.
+
+                        Comments are ignored by browsers.</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                            p {
+                                color: red;
+                                /* This is a single-line comment */
+                                text-align: center;
+                            }
+                                
+                            /* This is
+                            a multi-line
+                            comment */                               
+                            </pre>
+                            <center><iframe name="comment" width=800px height=100px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="SYNTAX/comments.html" target="comment">Click here to see</a></center> 
+                    </div>     
+                    <a class="inner_b" href="css-intro.html">PREVIOUS</a>
+                <a href="css-howto.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+
+                <br><br>
+                <center style="margin-left: 350px">
+                    <p><b>Webpage by Anshul Singh-1705887</b></p>
+                    <p>&copy2018 KIIT UNIVERSITY</p>
+                </center>                                         
+                </div>
+            </div>
+
+</body>
+
+</html>

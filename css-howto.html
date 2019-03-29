@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <title>
+        CSS TYPES
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a class="active" href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                        <h2>CSS TYPES</h2>
+                        <h3>Three Ways To Insert CSS</h3>
+                        <p>There are three ways of inserting a style sheet:</p>
+                        <div class="inner" style="margin-left:10%">
+                            <p style="font-family: Arial, Helvetica, sans-serif;color:maroon">
+                                External Style Sheet<br>
+                                Internal Style Sheet<br>
+                                Inline Style Sheet
+                            </p>
+                        </div>
+                        <h3>External Style Sheet</h3>
+                        <p>With an external style sheet, you can change the look of an entire website by changing just one file!
+
+                                Each page must include a reference to the external style sheet file inside the <link> element. The <link> element goes inside the <head> section:</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner">
+<pre>&lthead&gt
+    &ltlink rel="stylesheet" type="text/css" href="mystyle.css"&gt
+&lt/head&gt</pre>
+<center><iframe name="external" width=800px height=100px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="TYPES/external.html" target="external">Click here to see</a></center></div>
+                        <p>An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension.
+
+                                Here is how the "mystyle.css" looks:</p>    
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner"><pre>
+                            body {
+                                background-color: lightblue;
+                            }
+                                    
+                            h1 {
+                                color: navy;
+                                margin-left: 20px;
+                            }
+                            </pre></div></div>              
+                        <h3>Internal Style Sheet</h3>
+                        <p>An internal style sheet may be used if one single page has a unique style.
+
+                                Internal styles are defined within the &ltstyle&gt element, inside the &lthead&gt section of an HTML page:</p>
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner">
+<pre>&lthead&gt
+        &ltstyle&gt
+        body {
+            background-color: linen;
+        }
+        
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        } 
+        &ltstyle&gt
+&lthead&gt</pre>
+<center><iframe name="internal" width=800px height=100px></iframe></center>
+                                </div>
+                                <center><a class="inner_b" href="TYPES/internal.html" target="internal">Click here to see</a></center></div>
+                        <h3>Inline Styles</h3>
+                        <p>An inline style may be used to apply a unique style for a single element.
+
+                                To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+                                
+                                The example below shows how to change the color and the left margin of a &lth1&gt element:</p>   
+                        <div class="card"><center><label>Example</label></center><br>
+                            <div class="inner">
+<pre>&lth1 style="color:blue;margin-left:30px;"&gtThis is a heading&lt/h1&gt</pre>
+<center><iframe name="inline" width=800px height=100px></iframe></center>
+                                    </div>
+                                    <center><a class="inner_b" href="TYPES/inline.html" target="inline">Click here to see</a></center></div>     
+                        <h3>Cascading Order</h3>
+                                <p>What style will be used when there is more than one style specified for an HTML element?
+                                
+                                Generally speaking we can say that all the styles will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+                                
+                                Inline style (inside an HTML element)
+                                External and internal style sheets (in the head section)
+                                Browser default
+                                So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the <head> tag, or in an external style sheet, or a browser default value.
+                                
+                                
+                                </p>
+                                <div class="card"><center><label>Example</label></center><br>
+                                    <div class="inner">
+                                            <center><iframe name="cascading" width=800px height=300px></iframe></center>
+                                    </div>
+                                    <center><a class="inner_b" href="TYPES/cascading.html" target="cascading">Click here to see</a></center></div>  
+                                    <a class="inner_b" href="css-syntax.html">PREVIOUS</a>
+                <a href="css-color.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+
+                <br><br>
+                <center style="margin-left: 350px">
+                    <p><b>Webpage by Anshul Singh-1705887</b></p>
+                    <p>&copy2018 KIIT UNIVERSITY</p>
+                </center>                                                                           
+                    </div>
+                </div>
+    
+    </body>
+    
+    </html>    

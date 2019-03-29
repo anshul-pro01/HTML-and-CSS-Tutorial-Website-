@@ -1,0 +1,244 @@
+﻿<html>
+
+<head>
+    <title>LISTS</title>
+    <link rel="stylesheet" type="text/css" href="907_framecss.css">
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        p{
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        h3{
+            font-family: arial;
+            color:rgb(220 20 60);
+        }
+.active {
+    background-color: rgba(0, 0, 0, 0.993);
+    color: khaki;
+}
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+      	<br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a class="active" href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="#" style="padding-bottom: 12px;padding-left:0px;padding-right: 20px;padding-top: 12px;height: 100px;">
+                        <img src="logo.png" height="100px" width="100px">
+
+                    </a>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                              <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                   <center>
+   <h1><ul><i>HTML LISTS(&lt;ul&gt;,&lt;ol&gt;,&lt;dl&gt;)</i></ul></h1>
+</center>
+<h3>1.Introduction</h3>
+<p>HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −<center><div id="list_content">
+<ul><i>&lt;ul&gt;</i> − An unordered list. This will list items using plain bullets.</ul>
+<ul><i>&lt;ol&gt;</i> − An ordered list. This will use different schemes of numbers to list your items.</ul>
+<ul><i>&lt;dl&gt;</i> − A definition list. This arranges your items in the same way as they are arranged in a dictionary.</ul></div></center></p>
+
+<h3>2.Html Un-Ordered List:</h3>
+<p>An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML <i>&lt;ul&gt;</i> tag. Each item in the list is marked with a bullet.</p>
+
+<h3>3.Type Attribute(Un-Ordered List):</h3>
+<p>You can use type attribute for <i>&lt;ul&gt;</i> tag to specify the type of bullet you like. By default, it is a disc. Following are the possible options −</p>
+<center>
+<table border="4px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+    <tr>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><center><b>disc</b></center></td>
+        <td>Sets the list item marker to a bullet (default)</td>
+    </tr>
+    <tr>
+        <td><center><b>circle</b></center></td>
+        <td>Sets the list item marker to a circle</td>
+    </tr>
+    <tr>
+        <td><center><b>sqaure</b></center></td>
+        <td>Sets the list item marker to a square</td>
+    </tr>
+    <tr>
+        <td><center><b>none</b></center></td>
+        <td>The list items will not be marked</td>
+    </tr>
+</table></center>
+<h3>4.Example:</h3>
+<iframe src="907_li(1).html" style="margin-left:10%">iframe1</iframe><br><br>
+<a class="inner_b" href="907_li1.html" style="margin-left:10%">Run</a>
+
+<h3>5.Html Ordered List:</h3>
+<p>If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. This list is created by using <i>&lt;ol&gt;</i> tag. The numbering starts at one and is incremented by one for each successive ordered list element tagged with <i>&lt;li&gt;</i>.</p>
+
+<h3>6.Type Attribute(Ordered List):</h3>
+<p>You can use type attribute for &lt;ol&gt; tag to specify the type of numbering you like. By default, it is a number. Following are the possible options −</p>
+<center>
+<table border="4px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+    <tr>
+        <th>Type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><center><b>"1"</b></center></td>
+        <td>The list items will be numbered with numbers (default)</td>
+    </tr>
+    <tr>
+        <td><center><b>"A"</b></center></td>
+        <td>The list items will be numbered with uppercase letters</td>
+    </tr>
+    <tr>
+        <td><center><b>"a"</b></center></td>
+        <td>The list items will be numbered with lowercase letters</td>
+    </tr>
+    <tr>
+        <td><center><b>"I"</b></center></td>
+        <td>The list items will be numbered with uppercase roman numbers</td>
+    </tr>
+    <tr>
+        <td><center><b>"i"</b></center></td>
+        <td>The list items will be numbered with lowercase roman numbers</td>
+    </tr>
+</table></center>
+
+<h3>6.Example:</h3>
+<iframe src="907_ol(1).html" style="margin-left:10%">iframe1</iframe>
+<br><br>
+<a class="inner_b" href="907_ol(1).html" style="margin-left:10%">Run</a>
+
+<h3>7.Description List:</h3>
+<p>HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <i>&lt;dl&gt;</i> tag defines the description list, the <i>&lt;dt&gt;</i> tag defines the term (name), and the <i>&lt;dd&gt;</i> tag describes each term.HTML and XHTML supports a list style which is called definition lists where entries are listed like in a dictionary or encyclopedia. The definition list is the ideal way to present a glossary, list of terms, or other name/value list.</p>
+<center>
+<table border="4px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+    <tr>
+        <th>Tags</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><center><b><i>&lt;dl&gt;</i></b></center></td>
+        <td> Defines the start of the list</td>
+    </tr>
+    <tr>
+        <td><center><b><i>&lt;dt&gt;</i></b></center></td>
+        <td>A term</td>
+    </tr>
+    <tr>
+        <td><center><b><i>&lt;dd&gt;</i></b></center></td>
+        <td>Term definition</td>
+    </tr>
+    <tr>
+        <td><center><b><i>&lt;/dl&gt;</i></b></center></td>
+        <td>Defines the end of the list</td>
+    </tr>
+</table></center>
+
+<h3>8.Example:</h3>
+<iframe src="907_dl(1).html" style="margin-left:10%">iframe1</iframe><br><br>
+<a class="inner_b" href="907_dl(1).html" style="margin-left:10%">Run</a>
+
+
+<h3>9.The <i>Start</i> Attribute:</h3>
+<p>You can use <i>start</i> attribute for <i>&lt;ol&gt;</i> tag to specify the starting point of numbering you need. Following are the possible options By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the <i>start</i> attribute−</p>
+<center>
+<div id="dl_content"><p><ul type="none">
+<li><i>&lt;ol type = "1" start = "4"&gt;</i>- Numerals starts with 4.</li>
+<li><i>&lt;ol type = "I" start = "4"&gt;</i>- Numerals starts with IV.</li>
+<li><i>&lt;ol type = "i" start = "4"&gt;</i>- Numerals starts with iv.</li>
+<li><i>&lt;ol type = "a" start = "4"&gt;</i>- Letters starts with d.</li>
+<li><i>&lt;ol type = "A" start = "4"&gt;</i>- Letters starts with D.</li></ol></p></div></center>
+
+<h3>10.Examples:</h3>
+<p>Following is an example where we used <i>&lt;ol type = "i" start = "4"&gt; -</i></p>
+<iframe src="907_start(1).html" style="margin-left:10%">iframe1</iframe><br><br>
+<a class="inner_b" href="907_start(1).html" style="margin-left:10%">Run</a>
+
+<h3>11.Nested Html Lists Example:</h3>
+<p>List can be nested (lists inside lists)-</p>
+<iframe src="907_nested(1).html" style="margin-left:10%">iframe1</iframe><br><br>
+<a class="inner_b" href="907_nested(1).html" style="margin-left:10%">Run</a>
+<br><br>
+<div id="note_content" style="margin-left:10%"><b><i>Note: List items can contain new list, and other HTML elements, like images and links, etc.</i></b></div></center>
+<br><br><br><br>
+<a href="table.html" class="inner_b">PREVIOUS</a>
+<a href="block.html" class="inner_b" style="margin-left:960px">NEXT</a>
+
+                </div>
+            </div>
+
+</body>
+
+</html>

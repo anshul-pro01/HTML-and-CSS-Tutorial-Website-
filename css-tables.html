@@ -1,0 +1,289 @@
+<html>
+
+<head>
+    <title>
+        CSS TABLES
+    </title>
+    <link rel="Stylesheet" href="css/css-lists.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p.serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a class="active" href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS TABLES</h2>
+                    <h3 class=capper>Table Borders</h3>
+                    <p>To specify table borders in CSS, use the border property.
+
+                        The example below specifies a black border for &lttable&gt, &ltth&gt, and &lttd&gt elements:</p>
+
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                        table, th, td {
+                        border: 1px solid black;
+                        }
+                </pre>
+                            <center>
+                                <a href="css-tables/frame2.html" target="f2"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f2" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">Collapse Table Borders</h3>
+                    <p>The border-collapse property sets whether the table borders should be collapsed into a single
+                        border:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                table {
+                                    border-collapse: collapse;
+                                    border: 1px solid black;
+                                }</pre>
+                            <center>
+                                <a href="css-tables/frame3.html" target="f3"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f3" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">Table Padding</h3>
+                    <p>To control the space between the border and the content in a table, use the padding property on
+                        &lttd&gt and &ltth&gt elements:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                th, td {
+                                    padding: 15px;
+                                    text-align: left;
+                                }</pre>
+                            <center>
+                                <a href="css-tables/frame4.html" target="f4"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f4" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">Horizontal Alignment</h3>
+                    <p>The text-align property sets the horizontal alignment (like left, right, or center) of the
+                        content in &ltth&gt or &lttd&gt.
+
+                        By default, the content of &ltth&gt elements are center-aligned and the content of &lttd&gt
+                        elements are left-aligned.
+
+                        The following example left-aligns the text in &ltth&gt elements:
+
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                table, td, th {
+                                    border: 1px solid black;
+                                }
+                                
+                                table {
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+                                
+                                th {
+                                    text-align: left;
+                                }</pre>
+                            <center>
+                                <a href="css-tables/frame5.html" target="f5"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f5" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <h3 class="capper">Table Color</h3>
+                    <p>The example below specifies the background color and text color of <th> elements:
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                table {
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+                                
+                                th, td {
+                                    text-align: left;
+                                    padding: 8px;
+                                }
+                                
+                                tr:nth-child(even){background-color: #f2f2f2}
+                                
+                                th {
+                                    background-color: #4CAF50;
+                                    color: white;
+                                }</pre>
+                            <center>
+                                <a href="css-tables/frame6.html" target="f6"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f6" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <h3 class="capper">Responsive Table</h3>
+                    <p>A responsive table will display a horizontal scroll bar if the screen is too small to display
+                        the full content:
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                &ltdiv style="overflow-x:auto;">
+
+                                    &lttable>
+                                    ... table content ...
+                                    &lt/table>
+                                    
+                                    &lt/div></pre>
+                            <center>
+                                <a href="css-tables/frame7.html" target="f7"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f7" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <h3 class="capper">Hoverable Table</h3>
+                    <p>Use the :hover selector on <tr> to highlight table rows on mouse over:
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                table {
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+                                
+                                th, td {
+                                    padding: 8px;
+                                    text-align: left;
+                                    border-bottom: 1px solid #ddd;
+                                }
+                                
+                                tr:hover {background-color:#f5f5f5;}</pre>
+                            <center>
+                                <a href="css-tables/frame8.html" target="f8"><button class="inner_b">CLICK HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f8" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <a href="css-lists.html"><button class="inner_b">PREVIOUS</button></a>
+                    <a href="css-opacity.html" style="margin-left: 765px;"><button class="inner_b">NEXT</button></a>
+
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Abhinandan Purkait-1705876</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>
+                </div>
+            </div>
+</body>
+
+</html>

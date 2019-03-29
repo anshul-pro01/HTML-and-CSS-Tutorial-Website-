@@ -1,0 +1,1133 @@
+<html>
+
+<head>
+    <title>
+        HTML Main
+    </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+        body {
+            font-family: "Lato", sans-serif;
+            position: relative;
+            opacity: 1;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: linear-gradient(to right, #43c6ac, #f8ffae);
+        }
+
+        .active {
+            background-color: rgba(0, 0, 0, 0.993);
+            color: khaki;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+
+        td,
+        th {
+            border: 4px solid #17202A;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D0ECE7;
+        }
+
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 240px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.75);
+            overflow-x: hidden;
+            padding-top: 20px;
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+
+        .sidenav a {
+            padding: 6px 6px 6px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: orangered;
+        }
+
+        .main {
+            margin-left: 280px;
+            margin-top: 20px;
+            height: 100%;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+
+        .navbar {
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a {
+            float: right;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            border-style: 5px;
+
+        }
+
+        .navbar .logo {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: auto;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: right;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        .dropdown {
+            border-radius: 10px;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            opacity: 1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(253, 6, 6, 0.7);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: white;
+            background-color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content .odd {
+            float: none;
+            color: black;
+            background-color: rgba(141, 131, 131, 0.75);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content .even {
+            float: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(236, 72, 22, 0.9);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .bgimg-1 {
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+            background-position: center;
+            min-height: 320px;
+        }
+
+        #page-wrapper {
+            overflow: hidden;
+            padding: 5em 0em;
+            border-radius: 10px;
+        }
+
+        img {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #page h2 {
+            text-transform: uppercase;
+            font-size: 4.6em;
+            font-weight: 300;
+            color: khaki;
+            text-align: center;
+        }
+
+        #page h1 {
+            text-transform: uppercase;
+            font-size: 2.0em;
+            font-weight: 150;
+            color: white;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        #page h3 {
+            font-size: 2.8em;
+            font-weight: 250;
+            color: palegreen;
+
+            text-align: center;
+            text-align: left;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        #page p {
+            color: rgb(255, 255, 255);
+            font-size: 1.5em;
+            font-weight: 250;
+            padding-left: 10%;
+            padding-right: 20%;
+            text-align: middle;
+            line-height: 1.0;
+        }
+
+        .active {
+            background-color: rgba(0, 0, 0, 0.993);
+            color: khaki;
+        }
+
+
+        .card {
+            width: 1000px;
+            padding: 10px;
+            background: linear-gradient(to right, lightgreen, limegreen);
+            color: midnightblue;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: Franklin Gothic;
+            border: 2px solid lightgreen;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        .inner {
+            width: 900px;
+            padding: 5px;
+            background: linear-gradient(to left, cyan, lightblue);
+            color: maroon;
+            margin-left: 5%;
+            margin-right: 2%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 5px solid maroon;
+            border-right: 2px solid azure;
+            border-top: 2px solid azure;
+            border-bottom: 2px solid azure;
+            border-radius: 2px;
+            font-size: 20px;
+        }
+
+        .result {
+            outline: black;
+            background-color: white;
+            margin-left: 250px;
+            margin-top: 10px;
+            padding-left: 5%;
+            padding-right: 5%;
+            align-self: middle;
+            border-radius: 8px 8px 8px 8px;
+        }
+
+        .inPara {
+            margin-left: 150px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .capper {
+            font-variant: small-caps;
+        }
+
+        .codeinner1 {
+            background-color: #AED6F1;
+            padding-top: 12px;
+            border: 5px solid #34495E;
+            height: 320px;
+            width: 500px;
+            padding-left: 5%;
+            padding-right: 10%;
+            border-radius: 8px 8px 8px 8px;
+            margin-left: 150px;
+            margin-top: 10px;
+            color: black;
+            align-self: middle;
+        }
+
+        .inner_b {
+            width: 200px;
+            height: 30px;
+            text-decoration: none;
+            padding: 5px;
+            background-color: darkred;
+            color: khaki;
+            border: 2px solid darkred;
+            border-radius: 4px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.6);
+            transition: 0.5s;
+        }
+
+        .inner_b:hover {
+            background-color: transparent;
+            color: palegreen;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a class="active" href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="#" style="padding-bottom: 12px;padding-left:0px;padding-right: 20px;padding-top: 12px;height: 100px;">
+                        <img src="logo.png" height="100px" width="100px">
+
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+
+                    <h2>HTML Form</h2>
+
+                    <p>HTML Forms are required, when you want to collect some data from the site visitor. For example,
+                        during user registration you would like to collect information such as name, email address,
+                        credit card, etc.</p>
+                    <p>A form will take input from the site visitor and then will post it to a back-end application
+                        such as CGI, ASP Script or PHP script etc. The back-end application will perform required
+                        processing on the passed data based on defined business logic inside the application.</p>
+                    <p>There are various form elements available like text fields, textarea fields, drop-down menus,
+                        radio buttons, checkboxes, etc.</p>
+
+
+
+                    <h3>Form Attributes</h3>
+                    <p>Apart from common attributes, following is a list of the most frequently used form attributes
+                        &minus;</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;"> Description</th>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>action</b></p>
+                            </td>
+                            <td>
+                                <p>Backend script ready to process your passed data.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>method</b></p>
+                            </td>
+                            <td>
+                                <p>Method to be used to upload data. The most frequently used are GET and POST methods.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>target</b></p>
+                            </td>
+                            <td>
+                                <p>Specify the target window or frame where the result of the script will be displayed.
+                                    It takes values like _blank, _self, _parent etc.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>enctype</b></p>
+                            </td>
+                            <td>
+                                <p>You can use the enctype attribute to specify how the browser encodes the data before
+                                    it sends it to the server. Possible values are &minus;</p>
+                                <p><b>application/x-www-form-urlencoded</b> &minus; This is the standard method most
+                                    forms use in simple scenarios.</p>
+                                <p><b>mutlipart/form-data</b> &minus; This is used when you want to upload binary data
+                                    in the form of files like image, word file etc.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <h3>HTML Form Controls</h3>
+                    <p>There are different types of form controls that you can use to collect data using HTML form
+                        &minus;</p>
+                    <ul class="list" style="margin-left:10%;color:white">
+                        <li>Text Input Controls</li>
+                        <li>Checkboxes Controls</li>
+                        <li>Radio Box Controls</li>
+                        <li>Select Box Controls</li>
+                        <li>File Select boxes</li>
+                        <li>Hidden Controls</li>
+                        <li>Clickable Buttons</li>
+                        <li>Submit and Reset Button</li>
+                    </ul>
+
+                    <h3>Text Input Controls</h3>
+                    <p>There are three types of text input used on forms &minus;</p>
+                    <ul class="list">
+                        <li>
+                            <p><b>Single-line text input controls</b> &minus; This control is used for items that
+                                require only one line of user input, such as search boxes or names. They are created
+                                using HTML <b>&lt;input&gt;</b> tag.</p>
+                        </li>
+                        <li>
+                            <p><b>Password input controls</b> &minus; This is also a single-line text input but it
+                                masks the character as soon as a user enters it. They are also created using HTMl
+                                &lt;input&gt; tag.</p>
+                        </li>
+                        <li>
+                            <p><b>Multi-line text input controls</b> &minus; This is used when the user is required to
+                                give details that may be longer than a single sentence. Multi-line input controls are
+                                created using HTML <b>&lt;textarea&gt;</b> tag.</p>
+                        </li>
+                    </ul>
+                    <h3>Single-line text input controls</h3>
+                    <p>This control is used for items that require only one line of user input, such as search boxes or
+                        names. They are created using HTML &lt;input&gt; tag.</p>
+
+                    <p>Here is a basic example of a single-line text input used to take first name and last name
+                        &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Text Input Control&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form &gt;
+         First name: &lt;input type = "text" name = "first_name" /&gt;
+         &lt;br&gt;
+         Last name: &lt;input type = "text" name = "last_name" /&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+
+</pre>
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="text_input.html" height="100px" width="320px"></iframe>
+
+                    <h3>Attributes</h3>
+                    <p>Following is the list of attributes for &lt;input&gt; tag for creating text field.</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>type</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the type of input control and for text input control it will be set to <b>text</b>.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>value</b></p>
+                            </td>
+                            <td>
+                                <p>This can be used to provide an initial value inside the control.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>size</b></p>
+                            </td>
+                            <td>
+                                <p>Allows to specify the width of the text-input control in terms of characters.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">5</td>
+                            <td>
+                                <p><b>maxlength</b></p>
+                            </td>
+                            <td>
+                                <p>Allows to specify the maximum number of characters a user can enter into the text
+                                    box.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Password input controls</h3>
+                    <p>This is also a single-line text input but it masks the character as soon as a user enters it.
+                        They are also created using HTML &lt;input&gt;tag but type attribute is set to <b>password</b>.</p>
+
+                    <p>Here is a basic example of a single-line password input used to take user password &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Password Input Control&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form &gt;
+         User ID : &lt;input type = "text" name = "user_id" /&gt;
+         &lt;br&gt;
+         Password: &lt;input type = "password" name = "password" /&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="input_control.html" height="100px" width="320px"></iframe>
+
+                    <h3>Attributes</h3>
+                    <p>Following is the list of attributes for &lt;input&gt; tag for creating password field.</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute </th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>type</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the type of input control and for password input control it will be set to
+                                    <b>password</b>.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>value</b></p>
+                            </td>
+                            <td>
+                                <p>This can be used to provide an initial value inside the control.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>size</b></p>
+                            </td>
+                            <td>
+                                <p>Allows to specify the width of the text-input control in terms of characters.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">5</td>
+                            <td>
+                                <p><b>maxlength</b></p>
+                            </td>
+                            <td>
+                                <p>Allows to specify the maximum number of characters a user can enter into the text
+                                    box.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Multiple-Line Text Input Controls</h3>
+                    <p>This is used when the user is required to give details that may be longer than a single
+                        sentence. Multi-line input controls are created using HTML &lt;textarea&gt; tag.</p>
+
+                    <p>Here is a basic example of a multi-line text input used to take item description &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Multiple-Line Input Control&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form&gt;
+         Description : &lt;br /&gt;
+         &lt;textarea rows = "5" cols = "50" name = "description"&gt;
+            Enter description here...
+         &lt;/textarea&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="textarea.html" height="180px" width="400px"></iframe>
+
+                    <h3>Attributes</h3>
+                    <p>Following is the list of attributes for &lt;textarea&gt; tag.</p>
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>rows</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the number of rows of text area box.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>cols</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the number of columns of text area box</p>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+                    <h3>Checkbox Control</h3>
+                    <p>Checkboxes are used when more than one option is required to be selected. They are also created
+                        using HTML &lt;input&gt; tag but type attribute is set to <b>checkbox.</b>.</p>
+
+                    <p>Here is an example HTML code for a form with two checkboxes &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Checkbox Control&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form&gt;
+         &lt;input type = "checkbox" name = "maths" value = "on"&gt; Maths
+         &lt;input type = "checkbox" name = "physics" value = "on"&gt; Physics
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="checkbox.html" height="100px" width="320px"></iframe>
+
+                    <h3>Attributes</h3>
+                    <p>Following is the list of attributes for &lt;checkbox&gt; tag.</p>
+
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>type</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the type of input control and for checkbox input control it will be set to
+                                    <b>checkbox.</b>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>value</b></p>
+                            </td>
+                            <td>
+                                <p>The value that will be used if the checkbox is selected.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>checked</b></p>
+                            </td>
+                            <td>
+                                <p>Set to <i>checked</i> if you want to select it by default.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Radio Button Control</h3>
+                    <p>Radio buttons are used when out of many options, just one option is required to be selected.
+                        They are also created using HTML &lt;input&gt; tag but type attribute is set to <b>radio</b>.</p>
+
+                    <p>Here is example HTML code for a form with two radio buttons &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Radio Box Control&lt;/title&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;form&gt;
+         &lt;input type = "radio" name = "subject" value = "maths"&gt; Maths
+         &lt;input type = "radio" name = "subject" value = "physics"&gt; Physics
+      &lt;/form&gt;
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="radiobutton.html" height="100px" width="320px"></iframe>
+                    <h3>Attributes</h3>
+                    <p>Following is the list of attributes for radio button.</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>type</b></p>
+                            </td>
+                            <td>
+                                <p>Indicates the type of input control and for checkbox input control it will be set to
+                                    radio.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>value</b></p>
+                            </td>
+                            <td>
+                                <p>The value that will be used if the radio box is selected.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>checked</b></p>
+                            </td>
+                            <td>
+                                <p>Set to <i>checked</i> if you want to select it by default.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <h3>Select Box Control</h3>
+                    <p>A select box, also called drop down box which provides option to list down various options in
+                        the form of drop down list, from where a user can select one or more options.</p>
+
+                    <p>Here is example HTML code for a form with one drop down box</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Select Box Control&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form&gt;
+         &lt;select name = "dropdown"&gt;
+            &lt;option value = "Maths" selected&gt;Maths&lt;/option&gt;
+            &lt;option value = "Physics"&gt;Physics&lt;/option&gt;
+         &lt;/select&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="select.html" height="50px" width="120px"></iframe>
+                    <h3>Attributes</h3>
+                    <p>Following is the list of important attributes of &lt;select&gt; tag &minus;</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>name</b></p>
+                            </td>
+                            <td>
+                                <p>Used to give a name to the control which is sent to the server to be recognized and
+                                    get the value.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>size</b></p>
+                            </td>
+                            <td>
+                                <p>This can be used to present a scrolling list box.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>multiple</b></p>
+                            </td>
+                            <td>
+                                <p>If set to "multiple" then allows a user to select multiple items from the menu.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>Following is the list of important attributes of &lt;option&gt; tag &minus;</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Attribute</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>value</b></p>
+                            </td>
+                            <td>
+                                <p>The value that will be used if an option in the select box box is selected.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>selected</b></p>
+                            </td>
+                            <td>
+                                <p>Specifies that this option should be the initially selected value when the page
+                                    loads.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>label</b></p>
+                            </td>
+                            <td>
+                                <p>An alternative way of labeling options</p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <h3>Button Controls</h3>
+                    <p>There are various ways in HTML to create clickable buttons. You can also create a clickable
+                        button using &lt;input&gt;tag by setting its type attribute to <b>button</b>. The type
+                        attribute can take the following values &minus;</p>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Sr.No</th>
+                            <th style="text-align:center;">Type</th>
+                            <th style="text-align:center;">Description</th>
+                        </tr>
+                        <tr>
+                            <td class="ts">1</td>
+                            <td>
+                                <p><b>submit</b></p>
+                            </td>
+                            <td>
+                                <p>This creates a button that automatically submits a form.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">2</td>
+                            <td>
+                                <p><b>reset</b></p>
+                            </td>
+                            <td>
+                                <p>This creates a button that automatically resets form controls to their initial
+                                    values.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">3</td>
+                            <td>
+                                <p><b>button</b></p>
+                            </td>
+                            <td>
+                                <p>This creates a button that is used to trigger a client-side script when the user
+                                    clicks that button.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ts">4</td>
+                            <td>
+                                <p><b>image</b></p>
+                            </td>
+                            <td>
+                                <p>This creates a clickable button but we can use an image as background of the button.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Example</h3>
+                    <p>Here is example HTML code for a form with three types of buttons &minus;</p>
+
+                    <pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;File Upload Box&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;form&gt;
+         &lt;input type = "submit" name = "submit" value = "Submit" /&gt;
+         &lt;input type = "reset" name = "reset"  value = "Reset" /&gt;
+         &lt;input type = "button" name = "ok" value = "OK" /&gt;
+         &lt;input type = "image" name = "imagebutton" src = "/html/images/logo.png" /&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+                    <p>This will produce the following result &minus;</p>
+                    <iframe onLoad="resizeFrame(this)" class="result" src="button.html" height="70px" width="250px"></iframe>
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="inner_b" href="iframe.html">PREVIOUS</button>
+
+                        <a class="inner_b" href="inputtype.html" style="margin-left:960px">NEXT</a>
+
+                </div>
+            </div>
+
+
+</body>
+
+</html>

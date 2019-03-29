@@ -1,0 +1,271 @@
+<html>
+
+<head>
+    <title>
+        CSS COLOR
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #container {
+            background-color: white;
+            height: 50px;
+            width: 940px;
+            padding: 10px;
+            border: 5px solid gray;
+        }
+
+        #container1 {
+            background-color: yellow;
+            height: 150px;
+            width: 940px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+            overflow: auto;
+            margin-left: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a class="active" href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <center>
+                        <div id=container>
+                            <image src="">
+                                <font size="10" color="black">
+                                    <center>CSS COLORS</center>
+                                </font>
+                        </div>
+                        <br>
+                        <font size="4" color="orange">
+                            <h1>Introduction:</h1>
+                        </font>
+                        <font color="white" size="4">
+                            <p>CSS uses color values to specify a color. Typically, these are used to set a color
+                                either for the foreground of an element (i.e., its text) or else for the background of
+                                the element. They can also be used to affect the color of borders and other decorative
+                                effects.You can specify your color values in various formats. Following table lists all
+                                the possible formats.</p>
+                            <center>
+                                <table border=2 height=100 width=500 cellpadding=4 cellspacing=2 bgcolor=white>
+                                    <tr>
+                                        <td>Format</td>
+                                        <td>Syntax</td>
+                                        <td>Example</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hex Code</td>
+                                        <td>#RRGGBB/td>
+                                        <td>p{color:#FF0000;}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Short Hex Code</td>
+                                        <td>#RGB</td>
+                                        <td>p{color:#6A7;}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RGB %</td>
+                                        <td>rgb(rrr%,ggg%,bbb%)</td>
+                                        <td>p{color:rgb(50%,50%,50%);}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RGB Absolute</td>
+                                        <td>rgb(rrr,ggg,bbb)</td>
+                                        <td>p{color:rgb(0,0,255);}</td>
+                                    </tr>
+                                </table>
+                            </center>
+                            <p>These formats are explained in more detail in the following sections:</p>
+                            <font size="4" color="orange">
+                                <h1>CSS HEXAcode:</h1>
+                            </font>
+                            <p>A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent
+                                a red value, the next two are a green value(GG), and the last are the blue value(BB).A
+                                hexadecimal value can be taken from any graphics software like Adobe Photoshop, Jasc
+                                Paintshop Pro, or even using Advanced Paint Brush.Each hexadecimal code will be
+                                preceded by a pound or hash sign '#'. Following are the examples to use Hexadecimal
+                                notation.</p>
+                            <p>
+                                <font color=pink size=5>Short Hexacode:</font>
+                            </p>
+                            <p>This is a shorter form of the six-digit notation. In this format, each digit is
+                                replicated to arrive at an equivalent six-digit value. For example: #6A7 becomes
+                                #66AA77.</p>
+                            <center>
+                                <br>
+                                <table border=2 bgcolor=white height=100 width=500>
+                                    <tr>
+                                        <th style="text-align:center;width:50%">Color</th>
+                                        <th style="text-align:center;width:50%">Color HEX</th>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#000000"></td>
+                                        <td style="text-align:center;">#000000</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#FF0000"></td>
+                                        <td style="text-align:center;">#FF0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#00FF00"></td>
+                                        <td style="text-align:center;">#00FF00</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#0000FF"></td>
+                                        <td style="text-align:center;">#0000FF</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#FFFF00"></td>
+                                        <td style="text-align:center;">#FFFF00</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#00FFFF"></td>
+                                        <td style="text-align:center;">#00FFFF</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#FF00FF"></td>
+                                        <td style="text-align:center;">#FF00FF</td>
+                                    </tr>
+                                    <tr>
+                                        <td bgcolor="#FFFFFF"></td>
+                                        <td style="text-align:center;">#FFFFFF</td>
+                                    </tr>
+                                </table>
+                            </center>
+                            <font size="4" color="orange">
+                                <h1>CSS RGB Value:</h1>
+                            </font>
+                            <p>This color value is specified using the rgb( ) property. This property takes three
+                                values, one each for red, green, and blue. The value can be an integer between 0 and
+                                255 or a percentage.All the browsers does not support rgb() property of color so it is
+                                recommended not to use it.</p>
+                        </font>
+                        <br>
+                        <center>
+                            <table border=2 bgcolor=white height=100 width=500>
+                                <tr>
+                                    <th style="text-align:center;width:50%">Color</th>
+                                    <th style="text-align:center;width:50%">Color HEX</th>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#000000"></td>
+                                    <td style="text-align:center;">rgb(0,0,0</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FF0000"></td>
+                                    <td style="text-align:center;">rgb(255,0,0)</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#00FF00"></td>
+                                    <td style="text-align:center;">rgb(0,255,0)</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#0000FF"></td>
+                                    <td style="text-align:center;">rgb(0,0,255)</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FFFFFF"></td>
+                                    <td style="text-align:center;">rgb(255,255,255)</td>
+                                </tr>
+                            </table>
+                        </center>
+                        <h2>
+                            <font color=pink>Example:</font>
+                        </h2>
+                    </center>
+                    <div id=container1>
+                        <pre>
+#p1 {background-color: #ff0000;}   /* red */
+#p2 {background-color: #00ff00;}   /* green */
+#p3 {background-color: #0000ff;}   /* blue */
+</pre>
+                    </div>
+                    <a href="colorex.html" target="_blank"><img src="run.png" height=80 width=100></a>
+                    <br>
+                    <a class="inner_b" href="css-howto.html">PREVIOUS</a>
+                    <a href="css-backgrounds.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+                
+                        <br><br>
+                        <center style="margin-left: 350px">
+                            <p><b>Webpage by Devishakti Behera-1705897</b></p>
+                            <p>&copy2018 KIIT UNIVERSITY</p>
+                        </center>          
+</body>
+
+</html>

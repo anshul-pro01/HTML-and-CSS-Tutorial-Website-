@@ -1,0 +1,696 @@
+
+<html>
+
+<head>
+    <title>
+        HTML Main
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to right, #43c6ac, #f8ffae);
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.993);
+    color: khaki;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+     margin-left:15%; 
+    margin-right:15%;
+}
+
+
+td, th {
+    border: 4px solid #17202A  ;
+    padding: 8px;
+    }
+
+    tr:nth-child(even){
+    background-color: #D0ECE7;
+    }
+
+
+    th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    }
+
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: orangered;
+}
+
+.main {
+    margin-left: 280px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border-style: 5px;
+
+}
+
+.navbar .logo {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.dropdown {
+    border-radius: 10px;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    opacity: 1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(253, 6, 6, 0.7);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .odd {
+    float: none;
+    color: black;
+    background-color: rgba(141, 131, 131, 0.75);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .even {
+    float: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(236, 72, 22, 0.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bgimg-1 {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    background-position: center;
+    min-height: 400px;
+}
+
+#page-wrapper {
+    overflow: hidden;
+    padding: 5em 0em;
+    border-radius: 10px;
+}
+
+img {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#page h2 {
+    text-transform: uppercase;
+    font-size: 4.6em;
+    font-weight: 300;
+    color:khaki;
+    text-align: center;
+}
+
+#page h1 {
+    text-transform: uppercase;
+    font-size: 2.0em;
+    font-weight: 150;
+    color: white;
+    text-align: center;
+}
+
+#page h3 {
+    font-size: 2.8em;
+    font-weight: 250;
+    color: palegreen;
+    text-align: center;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#page p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-weight: 250;
+    padding-left: 10%;
+    padding-right: 20%;
+    text-align: middle;
+    line-height: 1.0;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.993);
+    color: khaki;
+}
+
+
+.card {
+    width: 1000px;
+    padding: 10px;
+    background: linear-gradient(to right, lightgreen, limegreen);
+    color: midnightblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Franklin Gothic;
+    border: 2px solid lightgreen;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.inner {
+    width: 900px;
+    padding: 5px;
+    background: linear-gradient(to left, cyan, lightblue);
+    color: maroon;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-left: 5px solid maroon;
+    border-right: 2px solid azure;
+    border-top: 2px solid azure;
+    border-bottom: 2px solid azure;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.result { 
+    outline: black;
+    background-color:white;
+    margin-left: 250px;
+    margin-top:10px;
+    padding-left: 5%;
+    padding-right: 10%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.inPara {
+    margin-left: 150px;
+    font-size: 20px;
+    color: white;
+}
+
+.capper{
+    font-variant: small-caps;
+}
+
+.codeinner1{
+    background-color:#AED6F1;
+    padding-top:12px;
+    border: 5px solid #34495E;
+    height:320px;
+    width: 500px;
+    padding-left: 5%;
+    padding-right: 10%;
+    border-radius: 8px 8px 8px 8px;
+    margin-left: 150px;
+    margin-top:10px;
+    color:black;
+    align-self:  middle;
+}
+.inner_b{
+    width:200px;
+    height:30px;
+    text-decoration:none;
+    padding:5px;
+    background-color:darkred;
+    color: khaki;
+    border: 2px solid darkred;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    box-shadow:0 12px 12px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.inner_b:hover{
+    background-color:transparent;
+    color:palegreen;
+    
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+	<br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a class="active" href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+<div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+                    <a class="logo" href="#" style="padding-bottom: 12px;padding-left:0px;padding-right: 20px;padding-top: 12px;height: 100px;">
+                        <img src="logo.png" height="100px" width="100px">
+
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                                <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+<h2>HTML - Formatting</h2>
+
+<p>If you use a word processor, you must be familiar with the ability to make text bold, italicized, or underlined; these are just three of the ten options available to indicate how text can appear in HTML and XHTML.</p>
+
+<h3>Bold Text</h3>
+<p>Anything that appears within <b>&lt;b&gt;...&lt;/b&gt;</b> element, is displayed in bold as shown below &minus;</p>
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Bold Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;b&gt;bold&lt;/b&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="bold.html"  height="100px" width="300px" ></iframe>
+<hr />
+<h3>Italic Text</h3>
+<p>Anything that appears within <b>&lt;i&gt;...&lt;/i&gt;</b> element is displayed in italicized as shown below &minus;</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Italic Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses an &lt;i&gt;italicized&lt;/i&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="italic.html" height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Underlined Text</h3>
+<p>Anything that appears within <b>&lt;u&gt;...&lt;/u&gt;</b> element, is displayed with underline as shown below &minus;</p>
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Underlined Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses an &lt;u&gt;underlined&lt;/u&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="underline.html" height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Strike Text</h3>
+<p>Anything that appears within <b>&lt;strike&gt;...&lt;/strike&gt;</b> element is displayed with strikethrough, which is a thin line through the text as shown below &minus;</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Strike Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;strike&gt;strikethrough&lt;/strike&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="strike.html"  height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Monospaced Font</h3>
+<p>The content of a <b>&lt;tt&gt;...&lt;/tt&gt;</b> element is written in monospaced font. Most of the fonts are known as variable-width fonts because different letters are of different widths (for example, the letter 'm' is wider than the letter 'i'). In a monospaced font, however, each letter has the same width.</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Monospaced Font Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;tt&gt;monospaced&lt;/tt&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="monospace.html" height="100px" width="300px" ></iframe>
+<hr />
+
+<h3>Superscript Text</h3>
+<p>The content of a <b>&lt;sup&gt;...&lt;/sup&gt;</b> element is written in superscript; the font size used is the same size as the characters surrounding it but is displayed half a character's height above the other characters.</p>
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Superscript Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;sup&gt;superscript&lt;/sup&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="superscript.html"  height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Subscript Text</h3>
+<p>The content of a <b>&lt;sub&gt;...&lt;/sub&gt;</b> element is written in subscript; the font size used is the same as the characters surrounding it, but is displayed half a character's height beneath the other characters.</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Subscript Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;sub&gt;subscript&lt;/sub&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="subscript.html"  height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Larger Text</h3>
+<p>The content of the <b>&lt;big&gt;...&lt;/big&gt;</b> element is displayed one font size larger than the rest of the text surrounding it as shown below &minus;</p>
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Larger Text Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;big&gt;big&lt;/big&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="big.html" height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Smaller Text</h3>
+<p>The content of the <b>&lt;small&gt;...&lt;/small&gt;</b> element is displayed one font size smaller than the rest of the text surrounding it as shown below &minus;</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Smaller Text Example&lt;/title&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;p&gt;The following word uses a &lt;small&gt;small&lt;/small&gt; typeface.&lt;/p&gt;
+   &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="small.html" height="100px" width="300px"></iframe>
+<hr />
+
+<h3>Grouping Content</h3>
+<p>The <b>&lt;div&gt;</b> and <b>&lt;span&gt;</b> elements allow you to group together several elements to create sections or subsections of a page.</p>
+<p>For example, you might want to put all of the footnotes on a page within a &lt;div&gt; element to indicate that all of the elements within that &lt;div&gt; element relate to the footnotes. You might then attach a style to this &lt;div&gt; element so that they appear using a special set of style rules.</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Div Tag Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;div id = "menu" align = "middle" &gt;
+         &lt;a href = "/index.htm"&gt;HOME&lt;/a&gt; | 
+         &lt;a href = "/about/contact_us.htm"&gt;CONTACT&lt;/a&gt; | 
+         &lt;a href = "/about/index.htm"&gt;ABOUT&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div id = "content" align = "left" bgcolor = "white"&gt;
+         &lt;h5&gt;Content Articles&lt;/h5&gt;
+         &lt;p&gt;Actual content goes here.....&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="div.html"  height="200px" width="300px"></iframe>
+
+<p>The &lt;span&gt; element, on the other hand, can be used to group inline elements only. So, if you have a part of a sentence or paragraph which you want to group together, you could use the &lt;span&gt; element as follows.</p>
+
+
+<pre class="codeinner1">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+   &lt;head&gt;
+      &lt;title&gt;Span Tag Example&lt;/title&gt;
+   &lt;/head&gt;
+    
+   &lt;body&gt;
+      &lt;p&gt;This is the example of &lt;span style = "color:green"&gt;span tag&lt;/span&gt;
+         and the &lt;span style = "color:red"&gt;div tag&lt;/span&gt; alongwith CSS&lt;/p&gt;
+   &lt;/body&gt;
+    
+&lt;/html&gt;
+</pre>
+<p>This will produce the following result &minus;</p>
+<iframe onLoad="resizeFrame(this)" class="result" src="span.html" height="100px" width="300px"></iframe>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+    <a class="inner_b" href="style.html">PREVIOUS</a>
+
+    <a class="inner_b" href="comments.html" style="margin-left:960px;">NEXT</a>
+
+
+<!-- PRINTING ENDS HERE -->
+</div>
+
+</body>
+
+</html>

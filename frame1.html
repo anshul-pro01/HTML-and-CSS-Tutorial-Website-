@@ -1,0 +1,298 @@
+﻿<html>
+
+<head>
+    <title>FRAMES</title>
+    <link rel="stylesheet" type="text/css" href="907_framecss.css">
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .active {
+    background-color: rgba(0, 0, 0, 0.993);
+    color: khaki;
+}
+        p{
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        h3{
+            color:rgb(220 20 60);
+            font-family:arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+       	<br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a class="active" href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="#" style="padding-bottom: 12px;padding-left:0px;padding-right: 20px;padding-top: 12px;height: 100px;">
+                        <img src="logo.png" height="100px" width="100px">
+
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                                <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                   <center>
+<h1><i><u>HTML&lt;frameset&gt;and&lt;frame&gt;TAGS</u></i></h1>
+</center>
+<h3>1.Introduction:</h3>
+<p>HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.</p>
+
+<h3>2.Definition and Usage of <i>&lt;frameset&gt;</i>tag:</h3>
+<p>The <i>&lt;frameset&gt;</i> tag is not supported in HTML5.The <i>&lt;frameset&gt;</i> tag defines a frameset.The <i>&lt;frameset&gt;</i> element holds one or more <i>&lt;frame&gt;</i> elements.Each <i>&lt;frame&gt;</i> element can hold a separate document.The <i>&lt;frameset&gt;</i> element specifies HOW MANY columns or rows there will be in the frameset, and HOW MUCH percentage/pixels of space will occupy each of them.
+    <center>
+<div id="frameset_content">
+<i><b>Note:A framset is simply an HTML document that tells the browser how to divide the screen into split windows.</b></i>
+</div></center></p>
+
+<h3>3.The <i>&lt;frameset&gt;</i>Tag Attributes:</h3>
+<p>Following are important attributes of <i>&lt;frameset&gt;</i>tags-</p>
+<table border="2px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+    <tr>
+        <th>Attributes</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><center><b>cols</b></center></td>
+        <td>Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways −
+        <ul>
+<li>Absolute values in pixels. For example, to create three vertical frames, use cols = "100, 500, 100".</li>
+<li>A percentage of the browser window. For example, to create three vertical frames, use cols = "10%, 80%, 10%".</li>
+<li>Using a wildcard symbol. For example, to create three vertical frames, use cols = "10%, *, 10%". In this case wildcard takes remainder of the window.</li>
+<li>As relative widths of the browser window. For example, to create three vertical frames, use cols = "3*, 2*, 1*". This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>rows</b></center></td>
+        <td>This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset.<ul><li>For example, to create two horizontal frames, use rows = "10%, 90%". You can specify the height of each row in the same way as explained above for columns.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>border</b></center></td>
+        <td>This attribute specifies the width of the border of each frame in pixels.<ul><li>For example, border = "5". A value of zero means no border.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>frameborder</b></center></td>
+        <td>This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no).<ul><li>For example frameborder = "0" specifies no border.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>framespacing</b></center></td>
+        <td>This attribute specifies the amount of space between frames in a frameset. This can take any integer value.<ul><li>For example framespacing = "10" means there should be 10 pixels spacing between each frames.</li></ul></td>
+    </tr>
+</table>
+
+<h3>4.Definition and Usage of <i>&lt;frame&gt;</i>tag:</h3>
+<p>The <i>&lt;frame&gt;</i>tag is not supported in HTML5.The <i>&lt;frame&gt;</i>tag defines one particular window (frame) within a
+    <i>&lt;frameset&gt;</i>.Each <i>&lt;frame&gt;</i> in a <i>&lt;frameset&gt;</i> can have different attributes, such as border, scrolling, the ability to resize, etc.
+    <center>
+    <div id="frame_content">
+<i><b>Note: If you want to validate a page containing frames, be sure the <i>&lt;!DOCTYPE&gt;</i> is set to either "HTML Frameset DTD" or "XHTML Frameset DTD".</b></i></div></center></p>
+
+<h3>5.The <i>&lt;frame&gt;</i>Tag Attributes:</h3>
+<p>Following are important attributes of <i>&lt;frame&gt;</i>tags-</p>
+<table border="2px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+    <tr>
+        <th>Attributes</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td><center><b>src</b></center></td>
+        <td>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL.<ul><li>For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>name</b></center></td>
+        <td>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</td>
+    </tr>
+    <tr>
+        <td><center><b>frameborder</b></center></td>
+        <td>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</td>
+    </tr>
+    <tr>
+        <td><center><b>marginwidth</b></center></td>
+        <td>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels.<ul><li>For example marginwidth = "10".</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>marginheight</b></center></td>
+        <td>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels.<ul><li>For example marginheight = "10".</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>noresize</b></center></td>
+        <td>By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame.<ul><li>For example noresize = "noresize".</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>scrolling</b></center></td>
+        <td>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto".<ul><li>For example scrolling = "no" means it should not have scroll bars.</li></ul></td>
+    </tr>
+    <tr>
+        <td><center><b>longdesc</b></center></td>
+        <td>This attribute allows you to provide a link to another page containing a long description of the contents of the frame.<ul><li>For example longdesc = "framedescription.htm"</li></ul></td>
+    </tr>
+    </table>
+
+    <h3>6.Creating Frames:</h3>
+    <p>To use frames on a page we use <i>&lt;frameset&gt;</i> tag instead of <i>&lt;body&gt;</i> tag. The <i>&lt;frameset&gt;</i> tag defines, how to divide the window into frames. The rows attribute of <i>&lt;frameset&gt;</i> tag defines horizontal frames and cols attribute defines vertical frames. Each frame is indicated by <i>&lt;frame&gt;</i> tag and it defines which HTML document shall open into the frame.
+        <center>
+        <div id="create_content"><b><i>Note:The &lt;frame&gt; tag deprecated in HTML5. Do not use this element.</i></b></div>
+        </center></p>
+
+<h3>7.Examples:</h3>
+<p>Following are the examples of <i>&lt;frameset&gt;</i>and<i>&lt;frame&gt;</i>tags-</p>
+<div id="e_1" style="margin-left:10%">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+   &lt;head&gt;<br>
+      &lt;title&gt;HTML Frames&lt;/title&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;frameset rows = "20%,60%,20%"&gt;<br>
+      &lt;frame name = "top" src = "b3.jpg"/&gt;<br>
+      &lt;frame name = "main" src = "b4.jpg"/&gt;<br>
+      &lt;frame name = "bottom" src = "b3.png"/&gt;<br>
+      &lt;noframes&gt;<br>
+         &lt;body>Your browser does not support frames.&lt;/body&gt;<br>
+      &lt;/noframes&gt;<br>
+   &lt;/frameset&gt;<br>
+&lt;/html&gt;
+</div><br><br>
+<a class="inner_b" style="margin-left:10%" href="907_frame1.html">Run</a>
+<br>
+<br>
+<div id="e_1" style="margin-left:10%">
+    &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+   &lt;head&gt;<br>
+      &lt;title&gt;HTML Frames&lt;/title&gt;<br>
+   &lt;/head&gt;<br>
+   &lt;frameset cols = "*,50%,*"&gt;<br>
+      &lt;frame name = "left" src = "b3.jpg"/&gt;<br>
+      &lt;frame name = "center" src = "b4.jpg"/&gt;<br>
+      &lt;frame name = "right" src = "b3.jpg"/&gt;<br>
+      &lt;noframes&gt;<br>
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;<br>
+      &lt;/noframes&gt;<br>
+   &lt;/frameset&gt;<br>
+&lt;/html&gt;
+</div><br><br>
+<a href="907_frame2.html" style="margin-left:10%" class="inner_b">Run</a>
+<br>
+<br>
+<div id="e_1" style="margin-left:10%">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+   &lt;head&gt;<br>
+      &lt;title&gt;HTML Frames&lt;/title&gt;<br>
+   &lt;/head&gt;<br>
+&lt;frameset rows="50%,50%" cols="50%,50%"&gt;<br>
+&lt;frame src="b3.jpg" name="1">&gt;<br>
+&lt;frame src="b4.jpg" name="2">&gt;<br>
+&lt;frame src="b4.jpg" name="3">&gt;<br>
+&lt;frame src="b3.jpg" name="4">&gt;<br>
+ &lt;noframes&gt;<br>
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;<br>
+      &lt;/noframes&gt;<br>
+   &lt;/frameset&gt;<br>
+&lt;/html&gt;
+</div><br><br>
+<a href="907_frame3.html" style="margin-left:10%" class="inner_b">Run</a>
+<br>
+<br>
+<div id="e_1" style="margin-left:10%">
+    &lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+   &lt;head&gt;<br>
+      &lt;title&gt;HTML Frames&lt;/title&gt;<br>
+   &lt;/head&gt;<br>
+&lt;frameset rows="50%,50%" cols="50%,50%"&gt;<br>
+&lt;frame src="b3.jpg" name="topleft"&gt;<br>
+&lt;frame src="b4.jpg" name="topright"&gt;<br>
+&lt;frame src="b3.jpg" name="botleft"&gt;<br>
+&lt;frameset rows="50%,50%"&gt;<br>
+&lt;frameset cols="50%,50%"&gt;<br>
+&lt;frame src="b4.jpg" name="brtl"&gt;<br>
+&lt;frame src="b3.jpg" name="brtr"&gt;<br>
+&lt;/frameset&gt;<br>
+&lt;frame src="b4.jpg" name="botrbot"&gt;<br>
+&lt;/frameset&gt;<br>
+   &lt;noframes&gt;<br>
+         &lt;body&gt;Your browser does not support frames.&lt;/body&gt;<br>
+      &lt;/noframes&gt;<br>
+   &lt;/frameset&gt;<br>
+&lt;/html&gt;
+</div><br><br>
+<a href="907_frame4.html" style="margin-left:10%" class="inner_b">Run</a>
+<br>
+<br>
+<a href="block.html" class="inner_b">PREVIOUS</a>
+<a href="iframe.html" class="inner_b" style="margin-left:960px">NEXT</a>
+                  
+                </div>
+            </div>
+
+</body>
+
+</html>

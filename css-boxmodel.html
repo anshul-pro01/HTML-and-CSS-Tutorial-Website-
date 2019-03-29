@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <title>
+        CSS BOXMODEL
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a class="active" href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS BOX MODEL</h2>
+                    <h3>The CSS Box Model</h3>
+                    <p>All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking
+                        about design and layout.
+
+                        The CSS box model is essentially a box that wraps around every HTML element. It consists of:
+                        margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+                    <center><img src="box-model-1.png"></center>
+                    <p>Explanation of the different parts:<br><br>
+
+                        1:)-Content - The content of the box, where text and images appear<br>
+                        2:)-Padding - Clears an area around the content. The padding is transparent<br>
+                        3:)-Border - A border that goes around the padding and content<br>
+                        4:)-Margin - Clears an area outside the border. The margin is transparent<br>
+                        The box model allows us to add a border around elements, and to define space between elements.</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                    div {
+                        width: 300px;
+                        border: 25px solid green;
+                        padding: 25px;
+                        margin: 25px;
+                    }
+                </pre>
+                            <center><iframe name="box" width=800px height=400px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="BOXMODEL/box.html" target="box">Click here to see</a></center>
+                    </div>
+                    <h3>Width and Height of an Element</h3>
+                    <p>In order to set the width and height of an element correctly in all browsers, you need to know
+                        how the box model works.<br>
+                        Assume we want to style a &ltdiv&gt element to have a total width of 350px:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                    div {
+                        width: 320px;
+                        padding: 10px;
+                        border: 5px solid gray;
+                        margin: 0;
+                    }
+                    </pre>
+                            <center><iframe name="max" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="BOXMODEL/max.html" target="max">Click here to see</a></center>
+                    </div>
+                    <p>Here is the calculation:</p>
+                    <center>
+                        <div class="inner"><label>320px (width)<br>
+                                + 20px (left + right padding)<br>
+                                + 10px (left + right border)<br>
+                                + 0px (left + right margin)<br>
+                                = 350px</label></div>
+                    </center>
+                    <p>The total width of an element should be calculated like this:<br>
+
+                        Total element width = width + left padding + right padding + left border + right border + left
+                        margin + right margin<br>
+
+                        The total height of an element should be calculated like this:<br>
+
+                        Total element height = height + top padding + bottom padding + top border + bottom border + top
+                        margin + bottom margin</p>
+                    <a class="inner_b" href="css-height.html">PREVIOUS</a>
+                    <a href="css-outline.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Anshul Singh-1705887</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>
+                </div>
+            </div>
+</body>
+
+</html>

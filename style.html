@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <title>
+        HTML Main
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .active {
+            background-color: rgba(0, 0, 0, 0.993);
+            color: khaki;
+        }
+
+        #container {
+            background-color: white;
+            height: 50px;
+            width: 940px;
+            padding: 10px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+
+        #container1 {
+            background-color: yellow;
+            height: 150px;
+            width: 940px;
+            padding: 10px;
+            border: 5px solid gray;
+            overflow: auto;
+            margin-left: 135px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a class="active" href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="#" style="padding-bottom: 12px;padding-left:0px;padding-right: 20px;padding-top: 12px;height: 100px;">
+                        <img src="logo.png" height="100px" width="100px">
+
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <center>
+                        <div id=container>
+                            <image src="">
+                                <font size="10" color="black">
+                                    <center>HTML STYLE-SHEET</center>
+                                </font>
+                        </div>
+                        <br>
+                        <font size="4" color="orange">
+                            <h1>Introduction:</h1>
+                        </font>
+                        <p>
+                            <font color="white" size="4">
+                                <font size="3"><b> Cascading Style Sheets(CSS)</b></font> is a style sheet language
+                                which specify how to implement style information into html pages.Style sheet is
+                                composed of a set of style rules in a specified format.The intention of CSS is to
+                                separate document presenntation from document contents,written in markup language.Same
+                                type of style sheet can be applied to different documents as well.
+                                Each property has a name and a value, separated by a colon (:). Each property
+                                declaration is separated by a semi-colon (;).
+                        </p>
+                        <font size="4" color="orange">
+                            <h1>Types of Style Sheet</h1>
+                        </font>
+                        <p>
+                            We can use CSS in four ways in our HTML document. </p>
+
+                        <font size="3" color="pink">
+                            <h1>External Style Sheet</h1>
+                        </font>
+                        <p>If we need to use our style sheet to various pages, then its always recommended to define a
+                            common style sheet in a separate file. A cascading style sheet file will have extension as
+                            .css and it will be included in HTML files using
+                            <link> tag.</p>
+
+                        <p>Consider we define a style sheet file style.css which has following rules:</p>
+                        </font>
+                    </center>
+                    <div id=container1>
+                        <pre>
+.red {
+   color: red;
+}
+</pre>
+                    </div>
+                    <center>
+                        <font color="white" size="4">
+                            <p>Here we defined three CSS rules which will be applicable to three different classes
+                                defined for the HTML tags. I suggest you should not bother about how these rules are
+                                being defined because you will learn them while studying CSS. Now let's make use of the
+                                above external CSS file in our following HTML document:</p>
+                        </font>
+                    </center>
+                    <div id=container1>
+                        <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+          &lt;title>Html style&lt;/title&gt;
+       &lt;/head &gt;
+
+       &lt;body&gt;
+          &lt;link rel = "stylesheet" type = "text/css" href = "/html/style.css"&gt;
+       
+                &lt;p class = "red"> This is red &lt;/p&gt;
+      &lt;/body&gt;
+ &lt;/html&gt;
+  </pre>
+                    </div>
+
+                    <a href="external.html" target="_blank"><img src="run.png" height=100 width=100></a>
+                    <center>
+                        <font size="3" color="pink">
+                            <h1>Internal Style Sheet</h1>
+                        </font>
+                        <font color="white" size="4">
+                            <p>If you want to apply Style Sheet rules to a single document only, then you can include
+                                those rules in header section of the HTML document using style tag.Rules defined in
+                                internal style sheet overrides the rules defined in an external CSS file.</p>
+                            <p>Let's re-write above example once again, but here we will write style sheet rules in the
+                                same HTML document using style tag.</p>
+                        </font>
+
+                    </center>
+                    <div id=container1>
+                        <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+          &lt;title>Html style&lt;/title&gt;
+          &lt;style type = "text/css"&gt;
+          .red { 
+            color: red; 
+         } 
+         .thick{ 
+            font-size:20px; 
+         } 
+         .green { 
+            color:green; 
+         }
+        &lt;/style &gt;
+       &lt;/head &gt;
+
+       &lt;body&gt;
+          &lt;link rel = "stylesheet" type = "text/css" href = "/html/style.css"&gt;
+       
+                &lt;p class = "red"> This is red &lt;/p&gt;
+               &lt;p class = "thick">This is thick &lt;/p&gt;
+      &lt;p class = "green">This is green &lt;/p&gt;
+      &lt;p class = "thick green">This is thick and green&lt;/p&gt;
+      &lt;/body&gt;
+ &lt;/html&gt;
+  </pre>
+                    </div>
+
+                    <a href="internal.html" target="_blank"><img src="run.png" height=100 width=100></a>
+                    <center>
+                        <font size="3" color="pink">
+                            <h1>Inline Style Sheet</h1>
+                        </font>
+                        <font color="white" size="4">
+                            <p>You can apply style sheet rules directly to any HTML element using style attribute of
+                                the relevant tag. This should be done only when you are interested to make a particular
+                                change in any HTML element only.Rules defined inline with the element overrides the
+                                rules defined in an external CSS file as well as the rules defined in style element.</p>
+                            <p>Let's re-write above example once again, but here we will write style sheet rules along
+                                with the HTML elements using style attribute of those elements.</p>
+                        </font>
+                        <div id=container1 style="margin-left: 0px;">
+                            <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+          &lt;title>Html style&lt;/title&gt;
+       &lt;/head &gt;
+
+       &lt;body&gt;
+          &lt;p style = "color:red;"> This is red &lt;/p&gt;
+          &lt;p style = "font-size:20px;">This is thick &lt;/p&gt;
+      &lt;p style = "color:green;">This is green &lt;/p&gt;
+      &lt;p style = "color:green;font-size:20px;">This is thick and green&lt;/p&gt;
+      &lt;/body&gt;
+ &lt;/html&gt;
+  </pre>
+                        </div>
+                    </center>
+                    <a href="inline.html" target="_blank"><img src="run.png" height=100 width=100></a>
+                    <center>
+                        <font size="3" color="pink">
+                            <h1>Embedded Style Sheet</h1>
+                        </font>
+                        <font color="white" size="4">
+                            <p>Embeded style sheet is used now a days,in this we can embedd different style rule writen
+                                in&lt;style&gt;tag in a original documents.</p>
+
+                            <p>There is an example of embedded styler sheet given:</p>
+                        </font>
+                    </center>
+                    <div id="container1">
+                        <pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+
+    &lt;head&gt;
+          &lt;title>Html style&lt;/title&gt;
+          &ltstyle&gt;
+         p{
+           color:red;
+          }
+          &lt/style&gt; 
+       &lt;/head &gt;
+
+       &lt;body&gt;
+          &lt;p&gt; This is red &lt;/p&gt;
+      &lt;/body&gt;
+ &lt;/html&gt;
+  </pre>
+                    </div>
+                    <a href="embedd.html" target="_blank"><img src="run.png" height=100 width=100></a>
+<br><br>
+                    
+                    <a href="linebreak.html" class="inner_b">PREVIOUS</a>
+                    <a class="inner_b" href="format.html" style="margin-left: 960px;">NEXT</a>
+
+
+                </div>
+            </div>
+
+</body>
+
+</html>

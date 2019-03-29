@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title>
+        CSS HEIGHT
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a class="active" href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                <h2>CSS HEIGHT AND WIDTH</h2>
+                <h3>Setting height and width</h3>
+                <p>The height and width properties are used to set the height and width of an element.
+                        
+                        The height and width can be set to auto (this is default. Means that the browser calculates the height and width), or be specified in length values, like px, cm, etc., or in percent (%) of the containing block.</p>
+                <div class="card"><center><label>Example</label></center><br>
+                    <div class="inner"><pre>
+                     div {
+                        height: 200px;
+                        width: 50%;
+                        background-color: powderblue;
+                    }
+                    </pre>
+                    <center><iframe name="height" width=800px height=300px></iframe></center></div>
+                    <center><a class="inner_b" href="HEIGHT/height.html" target="height">Click here to see</a></center></div>  
+                <div class="card"><center><label>Example</label></center><br>
+                    <div class="inner"><pre>
+                    div {
+                        height: 100px;
+                        width: 500px;
+                        background-color: powderblue;
+                    }
+                    </pre>
+                    <center><iframe name="height2" width=800px height=250px></iframe></center></div>
+                    <center><a class="inner_b" href="HEIGHT/height2.html" target="height2">Click here to see</a></center></div>   
+                <h3>Setting max-width</h3>
+                <p>The max-width property is used to set the maximum width of an element.
+                        
+                        The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+                        
+                        The problem with the &ltdiv&gt above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+                        
+                        Using max-width instead, in this situation, will improve the browser's handling of small windows.<br>
+                        The value of the max-width property overrides width.
+
+                        The following example shows a &ltdiv&gt element with a height of 100 pixels and a max-width of 500 pixels:</p>
+                <div class="card"><center><label>Example</label></center><br>
+                    <div class="inner"><pre>
+                    div {
+                        height: 100px;
+                        max-width: 500px;
+                        background-color: powderblue;
+                    }
+                    </pre>
+                    <center><iframe name="height3" width=800px height=250px></iframe></center></div>
+                    <center><a class="inner_b" href="HEIGHT/height3.html" target="height3">Click here to see</a></center></div>
+                    <a class="inner_b" href="css-padding.html">PREVIOUS</a>
+                    <a href="css-boxmodel.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+            
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Anshul Singh-1705887</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>        
+                </div>
+            </div>
+        </body>
+   </html>                                

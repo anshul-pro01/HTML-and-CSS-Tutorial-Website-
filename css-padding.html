@@ -1,0 +1,258 @@
+<html>
+
+<head>
+    <title>
+        CSS PADDING
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a class="active" href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS PADDING</h2>
+                    <h3>CSS Padding</h3>
+                    <p>The CSS padding properties are used to generate space around an element's content, inside of any
+                        defined borders.
+
+                        With CSS, you have full control over the padding. There are properties for setting the padding
+                        for each side of an element (top, right, bottom, and left).</p>
+                    <h3>Padding - Individual Sides</h3>
+                    <p>CSS has properties for specifying the padding for each side of an element:<br>
+                        1:)-Padding-top<br>
+                        2:)-Padding-right<br>
+                        3:)-Padding-bottom<br>
+                        4:)-Padding-left
+                        <br><br>
+                        All the padding properties can have the following values:<br>
+
+                        1:)-length - specifies a padding in px, pt, cm, etc.<br>
+                        2:)-% - specifies a padding in % of the width of the containing element<br>
+                        3:)-inherit - specifies that the padding should be inherited from the parent element<br>
+                        Note: Negative values are not allowed.<br>
+
+                        The following example sets different padding for all four sides of a &ltdiv&gt element: </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                        div {
+                            padding-top: 50px;
+                            padding-right: 30px;
+                            padding-bottom: 50px;
+                            padding-left: 80px;
+                        }                   
+                        </pre>
+                            <center><iframe name="indi" width=800px height=200px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/indi.html" target="indi">Click here to see</a></center>
+                    </div>
+                    <h3>Padding - Shorthand Property</h3>
+                    <p>To shorten the code, it is possible to specify all the padding properties in one property.<br>
+
+                        The padding property is a shorthand property for the following individual padding properties:<br>
+
+                        1:)-padding-top<br>
+                        2:)-padding-right<br>
+                        3:)-padding-bottom<br>
+                        4:)-padding-left<br><br>
+                        So, here is how it works:<br>
+
+                        If the padding property has four values:<br><br>
+
+                        padding: 25px 50px 75px 100px;<br>
+                        i:)-top padding is 25px<br>
+                        ii:)-right padding is 50px<br>
+                        iii:)-bottom padding is 75px<br>
+                        iv:)-left padding is 100px</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                         div {
+                            padding: 25px 50px 75px 100px;
+                         }
+                        </pre>
+                            <center><iframe name="padding4" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/padding4.html" target="padding4">Click here to see</a></center>
+                    </div>
+                    <p>If the padding property has three values:<br><br>
+
+                        padding: 25px 50px 75px;<br>
+                        i:)-top padding is 25px<br>
+                        ii:)-right and left paddings are 50px<br>
+                        iii:)-bottom padding is 75px</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                         div {
+                            padding: 25px 50px 75px;
+                         }
+                        </pre>
+                            <center><iframe name="padding3" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/padding3.html" target="padding3">Click here to see</a></center>
+                    </div>
+                    <p>If the padding property has two values:<br><br>
+
+                        padding: 25px 50px;<br>
+                        i:)-top and bottom paddings are 25px<br>
+                        ii:)-right and left paddings are 50px<br>
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                         div {
+                            padding: 25px 50px;
+                         }
+                        </pre>
+                            <center><iframe name="padding2" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/padding2.html" target="padding2">Click here to see</a></center>
+                    </div>
+                    <p>If the padding property has one value:<br><br>
+
+                        padding: 25px;<br>
+                        all four paddings are 25px</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                         div {
+                            padding: 25px;
+                         }
+                        </pre>
+                            <center><iframe name="padding1" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/padding1.html" target="padding1">Click here to see</a></center>
+                    </div>
+                    <h3>Padding and Element Width</h3>
+                    <p>The CSS width property specifies the width of the element's content area. The content area is
+                        the portion inside the padding, border, and margin of an element (the box model).
+
+                        So, if an element has a specified width, the padding added to that element will be added to the
+                        total width of the element. This is often an undesirable result.<br>
+
+                        In the following example, the &ltdiv&gt element is given a width of 300px. However, the actual
+                        rendered width of the &ltdiv&gt element will be 350px (300px + 25px of left padding + 25px of
+                        right padding):</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                        div {
+                            width:300px;
+                            padding: 25px;
+                        }
+                        </pre>
+                            <center><iframe name="ele" width=800px height=150px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/ele.html" target="ele">Click here to see</a></center>
+                    </div>
+                    <p>To keep the width at 300px, no matter the amount of padding, you can use the box-sizing
+                        property. This causes the element to maintain its width; if you increase the padding, the
+                        available content space will decrease.<br> Here is an example:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                        div {
+                            width:300px;
+                            padding: 25px;
+                            box-sizing:border-box;
+                        }
+                        </pre>
+                            <center><iframe name="last" width=800px height=250px></iframe></center>
+                        </div>
+                        <center><a class="inner_b" href="PADDING/last.html" target="last">Click here to see</a></center>
+                    </div>
+                    <a class="inner_b" href="css-margins.html">PREVIOUS</a>
+                    <a href="css-height.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+            
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Anshul Singh-1705887</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>        
+                </div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<html>
+
+<head>
+    <title>
+        CSS LISTS
+    </title>
+    <link rel="Stylesheet" href="css/css-lists.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p.serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a class="active" href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS LISTS</h2>
+                    <p>
+                        <i>Unordered Lists:</i><i style="margin-left: 650px;">Ordered Lists:</i>
+                        <ul style="float:left;margin-left:100px;font-size:20px;color:white;margin-top: 40px;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Coca Cola</li>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Coca Cola</li>
+                        </ul>
+                    </p>
+                    <br>
+                    <p>
+                        <ol style="margin-left:900px;font-size:20px;color:white;">
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Coca Cola</li>
+                            <li>Coffee</li>
+                            <li>Tea</li>
+                            <li>Coca Cola</li>
+                        </ol>
+                    </p>
+                    <br><br>
+
+                    <h3 class="capper">HTML lists and CSS list properties</h3>
+                    <p>
+                        In HTML, there are two main types of lists:
+                        <ul class="inPara">
+                            <li>unordered lists (&ltul&gt) - the list items are marked with bullets.</li>
+                            <li>ordered lists (&ltol&gt) - the list items are marked with numbers or letters</li>
+                        </ul>
+                    </p>
+                    <p>
+                        The CSS list properties allow you to:
+
+                        <ul class="inPara">
+                            <li>Set different list item markers for ordered lists</li>
+                            <li>Set different list item markers for unordered lists</li>
+                            <li>Set an image as the list item marker</li>
+                            <li>Add background colors to lists and list items</li>
+                        </ul>
+                    </p>
+
+                    <h3 class="capper">Different List Item Markers</h3>
+                    <p>The list-style-type property specifies the type of list item marker.
+
+                        The following example shows some of the available list item markers:
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                ul.a {
+                    list-style-type: circle;
+                }
+
+                ul.b {
+                    list-style-type: square;
+                }
+
+                ol.c {
+                    list-style-type: upper-roman;
+                }
+
+                ol.d {
+                    list-style-type: lower-alpha;
+                }</pre>
+                            <center>
+                                <a href="css-lists/frame2.html" target="f2"><button class="inner_b">CLICK HERE TO SEE</button></a>
+                            </center>
+                            <iframe name="f2" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">An Image as The List Item Marker</h3>
+                    <p>The list-style-image property specifies an image as the list item marker:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                h1 {
+                                    font-size: 40px;
+                                }
+                                h2 {
+                                    font-size: 30px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                }</pre>
+                            <center>
+                                <a href="css-lists/frame3.html" target="f3"><button class="inner_b">CLICK HERE TO SEE</button></a>
+                            </center>
+                            <iframe name="f3" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">Position The List Item Markers</h3>
+                    <p>The list-style-position property specifies the position of the list-item markers (bullet
+                        points).
+
+                        "list-style-position: outside;" means that the bullet points will be outside the list item. The
+                        start of each line of a list item will be aligned vertically. This is default:
+                    </p>
+                    <img src="images/1.PNG" height="200px" width="150px">
+                    <p>
+                        "list-style-position: inside;" means that the bullet points will be inside the list item. As it
+                        is part of the list item, it will be part of the text and push the text at the start:
+                    </p>
+                    <img src="images/2.PNG" height="200px" width="150px">
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                    ul.a {
+                        list-style-position: outside;
+                    }
+
+                    ul.b {
+                        list-style-position: inside;
+                    }</pre>
+                            <center>
+                                <a href="css-lists/frame4.html" target="f4"><button class="inner_b">CLICK HERE TO SEE</button></a>
+                            </center>
+                            <iframe name="f4" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <h3 class="capper">Styling List With Colors</h3>
+                    <p>We can also style lists with colors, to make them look a little more interesting.
+
+                        Anything added to the &ltol&gt or &ltul&gt tag, affects the entire list, while properties added
+                        to the
+                        &ltli&gt tag will affect the individual list items:</p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                                ol {
+                                    background: #ff9999;
+                                    padding: 20px;
+                                }
+                                
+                                ul {
+                                    background: #3399ff;
+                                    padding: 20px;
+                                }
+                                
+                                ol li {
+                                    background: #ffe5e5;
+                                    padding: 5px;
+                                    margin-left: 35px;
+                                }
+                                
+                                ul li {
+                                    background: #cce5ff;
+                                    margin: 5px;
+                                }</pre>
+                            <center>
+                                <a href="css-lists/frame5.html" target="f5"><button class="inner_b">CLICK HERE TO SEE</button></a>
+                            </center>
+                            <iframe name="f5" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <a href="css-fonts.html"><button class="inner_b">PREVIOUS</button></a>
+                    <a href="css-tables.html" style="margin-left: 765px;"><button class="inner_b">NEXT</button></a>
+
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Abhinandan Purkait-1705876</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>
+                </div>
+            </div>
+</body>
+
+</html>

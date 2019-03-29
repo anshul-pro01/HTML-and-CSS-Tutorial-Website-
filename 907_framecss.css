@@ -1,0 +1,96 @@
+nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li a{
+	display: block;
+	padding-top: 14px;
+	padding-right: 16px;
+	text-decoration: none;
+	float: right;
+}
+#nav_content{
+	border:2px solid black;
+	background-color: lightyellow;
+	height: 50px;
+	width: 1250px;
+}
+h1{
+	font-weight: 2px;
+	color:rgb(220 20 60);
+	font-family: cursive;
+}
+#frameset_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	height: 30px;
+	width: 800px;
+	padding: 2px 2px 2px 2px;
+	margin-top: 2px;
+}
+#frame_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	height: 40px;
+	width: 900px;
+	padding: 2px 2px 2px 2px;
+	margin-top: 2px;
+}
+#create_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	height: 30px;
+	width: 500px;
+	padding: 2px 2px 2px 2px;
+	margin-top: 2px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+#e_1{
+	border:4px solid black;
+	background-color:lightyellow;
+	width: 960px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#iframe_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	height: 90px;
+	width: 900px;
+}
+iframe{
+	background-color:lightyellow;
+	border:4px solid black;
+	margin: 2px 2px 2px 2px;
+	padding: 2px 2px 2px 2px;
+	width:900px;
+}
+#list_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	align-content: center;
+	height: 100px;
+	width: 900px;
+	padding: 2px 2px 2px 2px;
+}
+#dl_content{
+	border:4px solid black;
+	background-color: lightyellow;
+	height: 120px;
+	width: 900px;
+	padding: 2px 2px 2px 2px;
+}
+#note_content{
+	border:4px solid black;
+	color: black;
+	background-color: lightyellow;
+	height: 30px;
+	width: 700px;
+	padding: 2px 2px 2px 2px;
+}

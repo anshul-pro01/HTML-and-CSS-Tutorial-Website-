@@ -1,0 +1,334 @@
+﻿<html>
+
+<head>
+    <title>INPUT TYPES</title>
+    <link rel="stylesheet" type="text/css" href="907_framecss.css">
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        p {
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        h3 {
+            color: yellow;
+            font-family: arial;
+        }
+
+        .active {
+            background-color: rgba(0, 0, 0, 0.993);
+            color: khaki;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+            <center style="color:white">
+                    HTML
+                </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a class="active" href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <center>
+                        <font color="red">
+                            <h1><i><u>HTML &lt;input&gt;type ATTRIBUTE</u></i></h1>
+                        </font>
+                    </center>
+                    <center>
+                        <h3>1.Defination and Usage of <i>&lt;input&gt;</i> type tag:</h3>
+                        <p>The type attribute specifies the type of <i>&lt;input&gt;</i> element to display.
+                            The default type is text.The HTML <i>&lt;input&gt;</i> tag is used within a form to declare
+                            an input element − a control that allows the user to input data.</p>
+                    </center>
+                    <center>
+                        <div id="frame_content"><i><b>Note:</b> <i>&lt;input&gt;</i> element is empty, it contains
+                                attributes only.<br> <b>Syntax:</b>&lt;input type="value"&gt;</i></div>
+                    </center>
+                    <center>
+                        <h3>2.Different values of "type":</h3>
+                    </center>
+                    <center>
+                        <table border="4px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+                            <tr>
+                                <th>Value Name</th>
+                                <th>Notes</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Button</b></center>
+                                </td>
+                                <td>Defines a button-like input.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Check Box</b></center>
+                                </td>
+                                <td>Defines a checkbox, which the user can toggle on or off.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>File</b></center>
+                                </td>
+                                <td>Defines a file upload box with a browse button.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Hidden</b></center>
+                                </td>
+                                <td>Defines a field within a form that is not visible to the user.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Image</b></center>
+                                </td>
+                                <td>Defines an image that is clicked to submit a form.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Password</b></center>
+                                </td>
+                                <td>Displays an obfuscated password entry field.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Radio</b></center>
+                                </td>
+                                <td>Defines a circular selection button in a form.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Reset</b></center>
+                                </td>
+                                <td>Defines a button on a form that will return all fields to their default values.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Submit</b></center>
+                                </td>
+                                <td>Defines a button that is clicked to submit a form.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>Text</b></center>
+                                </td>
+                                <td>Defines a text entry field in a form.</td>
+                            </tr>
+                        </table>
+                        <h3>3.Different Attributes of <i>&lt;input&gt;</i> tag:</h3>
+                        <table border="4px black" cellpadding="2px" cellspacing="2px" bgcolor="lightyellow">
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Value</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>align</b></center>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>left</li>
+                                        <li>right</li>
+                                        <li>top</li>
+                                        <li>middle</li>
+                                        <li>bottom</li>
+                                    </ul>
+                                </td>
+                                <td>Not supported in HTML5.
+                                    Specifies the alignment of an image input (only for type="image")</td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                        <center>alt</center>
+                                    </b></td>
+                                <td>text</td>
+                                <td>Specifies an alternate text for images (only for type="image")</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>checked</b></center>
+                                </td>
+                                <td>checked</td>
+                                <td>Specifies that an <i>&lt;input&gt;</i> element should be pre-selected when the page
+                                    loads (for type="checkbox" or type="radio")</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>accept</b></center>
+                                </td>
+                                <td>content- types</td>
+                                <td>Specifies a comma-separated list of content types that the server accepts. </td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                        <center>disabled</center>
+                                    </b></td>
+                                <td>disabled</td>
+                                <td>Disables the input control. The button won't accept changes from the user. It also
+                                    cannot receive focus and will be skipped when tabbing.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>maxlength</b></center>
+                                </td>
+                                <td>number</td>
+                                <td>Defines the maximum number of characters allowed in a text field</td>
+                            </tr>
+                            <tr>
+                                <td><b>
+                                        <center>name</center>
+                                    </b></td>
+                                <td>text</td>
+                                <td>Assigns a name to the input control.</td>
+                            <tr>
+                                <td>
+                                    <center><b>readonly</b></center>
+                                </td>
+                                <td>readonly</td>
+                                <td>Sets the input control to read-only. It won't allow the user to change the value.
+                                    The control however, can receive focus and are included when tabbing through the
+                                    form controls.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>size</b></center>
+                                </td>
+                                <td>number</td>
+                                <td>Specifies the width of the control. If type = "text" or type = "password" this
+                                    refers to the width in characters. Otherwise it's in pixels.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>src</b></center>
+                                </td>
+                                <td>url</td>
+                                <td>Specifies the URL of the image to use as a submit button (only for type="image")</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <center><b>value</b></center>
+                                </td>
+                                <td>text</td>
+                                <td>Specifies the value of an <i>&lt;input&gt;</i> element</td>
+                            </tr>
+                        </table>
+                    </center><br><br>
+                    <center>
+                        <div id="e_1">
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+
+                            &lt;head&gt;<br>
+                            &lt;title&GT;HTML input Tag&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+
+                            &lt;body&gt;<br>
+                            &lt;form action = "homepage.html" method = "get"&gt;<br>
+                            First name:
+                            &lt;input type = "text" name = "first_name" value = "" maxlength = "100" /&gt;<br>
+                            &lt;br /&gt;<br>
+
+                            Last name:
+                            &lt;input type = "text" name = "last_name" value = "" maxlength = "100" /&gt;<br>
+                            &lt;input type = "submit" value = "Submit" /&gt;<br>
+                            &lt;p&gt;The button below activates a nothing when it is clicked.&lt;/p&gt;
+                            &lt;input type="button" value="Click me" onclick="msg()"&gt; <br>
+                            Checbox:
+                            &lt;input type="checkbox" name="vehicle1" value="Bike"&gt; I have a bike<br>
+                            &lt;input type="checkbox" name="vehicle2" value="Car"&gt; I have a car<br>
+                            &lt;input type="checkbox" name="vehicle3" value="Boat" checked&gt; I have a boat<br>
+                            Gender:
+                            &lt;input type="radio" name="gender" value="male"&gt; Male<br>
+                            &lt;input type="radio" name="gender" value="female"&gt; Female<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+
+                            &lt;/html&gt;<br>
+                        </div>
+                    </center>
+                    <br>
+                    <center>
+                        <a href="input1.html" class="inner_b">RUN</a>
+                    </center>
+                    <br>
+                    <br><br>
+                    <a href="form.html" class="inner_b">PREVIOUS</a>
+                    <a href="colours.html" class="inner_b" style="margin-left:960px">NEXT</a>
+                </div>
+            </div>
+
+</body>
+
+</html>

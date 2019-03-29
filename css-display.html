@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>
+        CSS DISPLAY
+    </title>
+    <link rel="Stylesheet" href="css/css-lists.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p.serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        p.sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a class="active" href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS DISPLAY</h2>
+                    <p>The display property is the most important CSS property for controlling layout.
+                    </p>
+                    <h3 class="capper">The display Property</h3>
+                    <p>The display property specifies if/how an element is displayed.
+
+                        Every HTML element has a default display value depending on what type of element it is. The
+                        default display value for most elements is block or inline.
+                    </p>
+                    <h3 class="capper">Block-level Elements</h3>
+                    <p>
+                        A block-level element always starts on a new line and takes up the full width available
+                        (stretches out to the left and right as far as it can).
+                    </p>
+                    <div class="w3-theme-border" style="border-width:3px;border-style:solid;">
+                        The &lt;div&gt; element is a block-level element.</div>
+                    <p>
+                        Examples of block-level elements:
+                        <ul class="inPara">
+                            <li>&ltdiv&gt</li>
+                            <li>&lth1&gt - &lth6&gt</li>
+                            <li>&ltp&gt</li>
+                            <li>&ltform&gt</li>
+                            <li>&ltheader&gt</li>
+                            <li>&ltfooter&gt</li>
+                            <li>&ltsection&gt</li>
+                        </ul>
+                    </p>
+                    <h3 class="capper">Inline Elements</h3>
+                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+                    <span class="w3-theme-border" style="border-width:3px;border-style:solid;">an inline &lt;span&gt;
+                        element
+                        inside</span>
+                    <p>
+                        Examples of inline elements:
+                        <ul class="inPara">
+                            <li>&ltspan&gt</li>
+                            <li>&lta&gt</li>
+                            <li>&ltimg&gt</li>
+                        </ul>
+                    </p>
+                    <h3 class="capper">Display: none;</h3>
+                    <p>
+                        display: none; is commonly used with JavaScript to hide and show elements without deleting and
+                        recreating them. Take a look at our last example on this page if you want to know how this can
+                        be
+                        achieved.
+
+                        The &ltscript&gt element uses display: none; as default.
+                    </p>
+
+                    <h3 class="capper">Override The Default Display Value</h3>
+                    <p>
+                        As mentioned, every element has a default display value. However, you can override this.
+
+                        Changing an inline element to a block element, or vice versa, can be useful for making the page
+                        look a specific way, and still follow the web standards.
+
+                        A common example is making inline &ltli&gt elements for horizontal menus:</p>
+
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                    li {
+                            display: inline;
+                    }</pre>
+                            <center>
+                                <a href="css-display/frame3.html" target="f3"><button class="inner_b">CLICK
+                                        HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f3" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <h3 class="capper">Hide an Element - display:none or visibility:hidden?</h3>
+                    <p>Hiding an element can be done by setting the display property to none. The element will be
+                        hidden, and the page will be displayed as if the element is not there:
+                    </p>
+                    <div class="card">
+                        <center><label>Example</label></center><br>
+                        <div class="inner">
+                            <pre>
+                h1.hidden {
+                        display: none;
+                }</pre>
+                            <pre>
+                h1.hidden {
+                        visibility: hidden;                    
+                }</pre>
+                            <center>
+                                <a href="css-display/frame4.html" target="f4"><button class="inner_b">CLICK
+                                        HERE
+                                        TO SEE</button></a>
+                            </center>
+                            <iframe name="f4" width="100%" height="200px">
+                            </iframe>
+                        </div>
+                    </div>
+                    <a href="css-opacity.html"><button class="inner_b">PREVIOUS</button></a>
+                    <a href="css-layout.html" style="margin-left: 765px;"><button class="inner_b">NEXT</button></a>
+
+                    <br><br>
+                    <center style="margin-left: 350px">
+                        <p><b>Webpage by Abhinandan Purkait-1705876</b></p>
+                        <p>&copy2018 KIIT UNIVERSITY</p>
+                    </center>
+                </div>
+            </div>
+</body>
+
+</html>

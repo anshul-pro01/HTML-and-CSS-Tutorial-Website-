@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <title>
+        CSS BACKGROUNDS
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a class="active" href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS BACKGROUNDS</h2>
+                    <p>The CSS background properties are used to define the background effects for elements.<br>
+
+                            CSS background properties:<br>
+                            
+                           1:-) background-color<br>
+                           2:-) background-image<br>
+                           3:-) background-repeat<br>
+                           4:-) background-attachment<br>
+                           5:-) background-position</p>   
+                    <h3>Background Color</h3>
+                    <p>The background-color property specifies the background color of an element.
+                            
+                            The background color of a page is set like this:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                                body {
+                                background-color:lightblue;
+                            }</pre>
+                            <center><iframe name="bgcolor" width=800px height=300px></iframe></center></div>
+                            <center><a class="inner_b" href="BACKGROUND/bgcolor.html" target="bgcolor">Click here to see</a></center></div>    
+                    <h3>Background Image</h3>
+                    <p>The background-image property specifies an image to use as the background of an element.
+                            
+                            By default, the image is repeated so it covers the entire element.
+                            
+                            The background image for a page can be set like this:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                            body {
+                                background-image: url("new.jpg");
+                            }
+                            </pre>
+                            <center><iframe name="bgimage" width=800px height=300px></iframe></center></div>
+                            <center><a class="inner_b" href="BACKGROUND/bgimage.html" target="bgimage">Click here to see</a></center></div>
+                    <h3>Background Image - Repeat Horizontally or Vertically</h3>
+                    <p>By default, the background-image property repeats an image both horizontally and vertically.
+                       To make a background image repeat horizontally,use (background-repeat:repeat-x;).</p> 
+                    <div class="card"><center><label>Example</label></center><br>
+                    <div class="inner"><pre>
+                        body {
+                            background-image: url("new.png");
+                            background-repeat: repeat-x;
+                        }   
+                            </pre>
+                            <center><iframe name="bgrepeat" width=800px height=300px></iframe></center></div>
+                            <center><a class="inner_b" href="BACKGROUND/bgrepeat.html" target="bgrepeat">Click here to see</a></center></div>
+                    <h3>Background Image - Set position and no-repeat</h3>
+                    <p>Showing the background image only once is also specified by the background-repeat property:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                            body {
+                                background-image: url("new.png");
+                                background-repeat: no repeat;
+                            }   
+                                </pre>
+                                <center><iframe name="norepeat" width=800px height=300px></iframe></center></div>
+                                <center><a class="inner_b" href="BACKGROUND/norepeat.html" target="norepeat">Click here to see</a></center></div>
+                                <p>Next. We want to change the position of the image, so that it does not disturb the text too much.
+
+                            The position of the image is specified by the background-position property:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                            body {
+                                background-image: url("new.png");
+                                background-repeat: no repeat;
+                                background-positon: right top;
+                            }   
+                                </pre>
+                                <center><iframe name="bgpos" width=800px height=300px></iframe></center></div>
+                                <center><a class="inner_b" href="BACKGROUND/bgpos.html" target="bgpos">Click here to see</a></center></div>
+                    <h3>Background Image - Fixed position</h3>
+                    <p>To specify that the background image should be fixed (will not scroll with the rest of the page), use the background-attachment property:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                            body {
+                                background-image: url("new.png");
+                                background-repeat: no repeat;
+                                background-positon: right top;
+                                background-attachment:fixed;
+                            }   
+                                </pre>
+                                <center><iframe name="bgfixed" width=800px height=300px></iframe></center></div>
+                                <center><a class="inner_b" href="BACKGROUND/bgfixed.html" target="bgfixed">Click here to see</a></center></div>   
+                    <h3>Background - Shorthand property</h3> 
+                    <p>To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.
+
+                            The shorthand property for background is background:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+            body {
+                background: #ffffff url("new.png") no-repeat right top;
+            }   
+                                        </pre>
+                                        <center><iframe name="bgshort" width=800px height=300px></iframe></center></div>
+                                        <center><a class="inner_b" href="BACKGROUND/bgshort.html" target="bgshort">Click here to see</a></center></div>
+                    <p>When using the shorthand property the order of the property values is:<br>
+
+                            1:-)background-color<br>
+                            2:-)background-image<br>
+                            3-:)background-repeat<br>
+                            4-:)background-attachment<br>
+                            5-:)background-position<br>
+                            It does not matter if one of the property values is missing, as long as the other ones are in this order.<br>
+                            
+                            </p>                                                                                                                      
+                <a class="inner_b" href="css-color.html">PREVIOUS</a>
+                <a href="css-borders.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+
+                <br><br>
+                <center style="margin-left: 350px">
+                    <p><b>Webpage by Anshul Singh-1705887</b></p>
+                    <p>&copy2018 KIIT UNIVERSITY</p>
+                </center>
+            </div>
+        </div>
+    </body>
+        
+</html>       

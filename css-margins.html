@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>
+        CSS MARGINS
+    </title>
+    <link rel="Stylesheet" href="html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <center style="color:white">
+            HTML
+        </center>
+        <br>
+        <a href="tutorial.html">HTML Tutorial</a>
+        <a href="introduction2.html">Introduction to HTML</a>
+        <a href="tag.html">Basic HTML Tags</a>
+        <a href="paragraph.html">HTML Paragraphs</a>
+        <a href="style.html">HTML Styles</a>
+        <a href="format.html">HTML Formatting</a>
+        <a href="comments.html">HTML Comments</a>
+        <a href="1link.html">HTML Links</a>
+        <a href="img1.html">HTML Images</a>
+        <a href="table.html">HTML Tables</a>
+        <a href="list.html">HTML Lists</a>
+        <a href="block.html">HTML Blocks</a>
+        <a href="frame1.html">HTML Frames</a>
+        <a href="form.html">HTML Forms</a>
+        <a href="inputtype.html">HTML Input Types</a>
+        <a href="colours.html">HTML Colors</a>
+        <br>
+        <center style="color:white">
+            CSS
+        </center>
+        <br>
+        <a href="css-intro.html">CSS Introduction</a>
+        <a href="css-syntax.html">CSS Syntax</a>
+        <a href="css-howto.html">CSS Types</a>
+        <a href="css-color.html">CSS Colors</a>
+        <a href="css-backgrounds.html">CSS Backgrounds</a>
+        <a href="css-borders.html">CSS Borders</a>
+        <a class="active" href="css-margins.html">CSS Margins</a>
+        <a href="css-padding.html">CSS Padding</a>
+        <a href="css-height.html">CSS Height/width</a>
+        <a href="css-boxmodel.html">CSS Box Model</a>
+        <a href="css-outline.html">CSS Outline</a>
+        <a href="css-text.html">CSS Text</a>
+        <a href="css-fonts.html">CSS Fonts</a>
+        <a href="css-lists.html">CSS Lists</a>
+        <a href="css-tables.html">CSS Tables</a>
+        <a href="css-opacity.html">CSS Opacity</a>
+        <a href="css-display.html">CSS Display</a>
+        <a href="css-layout.html">CSS Layout</a>
+        <a href="css-align.html">CSS Align </a>
+        <br><br><br>
+    </div>
+
+    <div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="index.html">
+                        <img src="logo.png" height="100px" width="100px" style="padding-left: 0px;">
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form1.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html" style="margin-right: 10px;"><i class="fa fa-users"></i> About Us</a>
+                    <a href="index.html" style="margin-right: 10px;"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+            <div id="page-wrapper" class="bgimg-1">
+                <div id="page" class="container">
+                    <h2>CSS MARGINS</h2>
+                    <h3>CSS Margins</h3>
+                    <p>The CSS margin properties are used to create space around elements, outside of any defined borders.
+                            
+                    With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+                            
+                    </p>
+                    <h3>Margin - Individual Sides</h3>
+                    <p>CSS has properties for specifying the margin for each side of an element:<br><br>
+                            
+                        1:)-margin-top<br>
+                        2:)-margin-right<br>
+                        3:)-margin-bottom<br>
+                        4:)-margin-left<br><br>
+                        All the margin properties can have the following values:<br>
+                            
+                        i:)-auto - the browser calculates the margin<br>
+                        ii:)-length - specifies a margin in px, pt, cm, etc.<br>
+                        iii:)-% - specifies a margin in % of the width of the containing element<br>
+                        iv:)-inherit - specifies that the margin should be inherited from the parent element<br>
+                        v:)-Tip: Negative values are allowed.<br><br>
+                            
+                            The following example sets different margins for all four sides of a &ltp&gt element:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            margin-top: 100px;
+                            margin-bottom: 100px;
+                            margin-right: 150px;
+                            margin-left: 80px;
+                        }                              
+                        </pre>
+                        <center><iframe name="marginindi" width=800px height=200px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/marginindi.html" target="marginindi">Click here to see</a></center></div>
+                    <h3>Margin - Shorthand Property</h3>
+                    <p>To shorten the code, it is possible to specify all the margin properties in one property.
+                            
+                            The margin property is a shorthand property for the following individual margin properties:<br>
+                            
+                            1:)-margin-top<br>
+                            2:)-margin-right<br>
+                            3:)-margin-bottom<br>
+                            4:)-margin-left<br><br>
+                            So, here is how it works:<br><br>
+                            
+                            If the margin property has four values:<br>
+                            
+                            margin: 25px 50px 75px 100px;<br>
+                            i:)-top margin is 25px<br>
+                            ii:)-right margin is 50px<br>
+                            iii:)-bottom margin is 75px<br>
+                            iv:)-left margin is 100px</p>  
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            margin: 25px 50px 75px 100px;
+                        }                             
+                        </pre>
+                        <center><iframe name="marginshort" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/marginshort.html" target="marginshort">Click here to see</a></center></div>        
+                            
+                    <p>If the margin property has three values:<br>
+
+                            margin: 25px 50px 75px;<br>
+                            i:)-top margin is 25px<br>
+                            ii:)-right and left margins are 50px<br>
+                            iii:)-bottom margin is 75px<br>
+                            </p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            margin: 25px 50px 75px;
+                        }                             
+                        </pre>
+                        <center><iframe name="marginshort2" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/marginshort2.html" target="marginshort2">Click here to see</a></center></div>        
+                                            
+                    <p>If the margin property has two values:<br>
+
+                            margin: 25px 50px;<br>
+                            i:)-top and bottom margins are 25px<br>
+                            ii:)-right and left margins are 50px</p> 
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            margin: 25px 50px;
+                        }                             
+                        </pre>
+                        <center><iframe name="marginshort3" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/marginshort3.html" target="marginshort3">Click here to see</a></center></div>            
+                    <p>If the margin property has one value:<br>
+
+                            margin: 25px;<br>
+                            1:)-all four margins are 25px</p>  
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        p {
+                            margin: 25px;
+                        }                             
+                        </pre>
+                        <center><iframe name="marginshort4" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/marginshort4.html" target="marginshort4">Click here to see</a></center></div> 
+                    <h3>The auto Value</h3>
+                    <p>You can set the margin property to auto to horizontally center the element within its container.
+                        
+                        The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        div {
+                            width:300px;
+                            margin:auto;
+                            border:1px solid red;
+                        }                             
+                        </pre>
+                        <center><iframe name="auto" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/auto.html" target="auto">Click here to see</a></center></div> 
+                    <h3>The inherit Value</h3>
+                    <p>This example lets the left margin of the &ltp class="ex1"&gt element be inherited from the parent element (&ltdiv&gt):</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        div {
+                            margin-left:100px;
+                            border:1px solid red;
+                        }  
+                        p.ex1 {
+                            margin-left:inherit;
+                        }                           
+                        </pre>
+                        <center><iframe name="inherit" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/inherit.html" target="inherit">Click here to see</a></center></div>    
+                    <h3>Margin Collapse</h3>
+                    <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+                            
+                            This does not happen on left and right margins! Only top and bottom margins!
+                            
+                            Look at the following example:</p>
+                    <div class="card"><center><label>Example</label></center><br>
+                        <div class="inner"><pre>
+                        h1 {
+                            margin: 0 0 50px 0;
+                        }
+                                
+                        h2 {
+                            margin: 20px 0 0 0;
+                        }        
+                        </pre>
+                        <center><iframe name="collapse" width=800px height=150px></iframe></center></div>
+                        <center><a class="inner_b" href="MARGINS/collapse.html" target="collapse">Click here to see</a></center></div>
+                    <p>In the example above, the &lth1&gt element has a bottom margin of 50px and the &lth2&gt element has a top margin set to 20px.
+
+                            Common sense would seem to suggest that the vertical margin between the &lth1&gt and the &lth2&gt would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.</p>  
+                    <a class="inner_b" href="css-borders.html">PREVIOUS</a>
+                    <a href="css-padding.html" style="margin-left: 900px;" class="inner_b">NEXT</a>
+            
+                    <br><br>
+                            <center style="margin-left: 350px">
+                                <p><b>Webpage by Anshul Singh-1705887</b></p>
+                                <p>&copy2018 KIIT UNIVERSITY</p>
+                            </center>        
+                        </div>
+                    </div>
+                    </body>
+                    
+                    </html>                                   
+

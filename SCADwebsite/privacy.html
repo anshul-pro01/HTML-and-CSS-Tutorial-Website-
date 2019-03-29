@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        HTML Main
+    </title>
+    <link rel="Stylesheet" href="css/html-main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        
+    body {
+    font-family: "Lato", sans-serif;
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to right, #43c6ac, #f8ffae);
+}
+
+.toc-links{
+  text-decoration-line:  black;
+  text-align: left;
+  font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+     margin-left:15%; 
+    margin-right:15%;
+}
+
+
+td, th {
+    border: 4px solid #17202A  ;
+    padding: 8px;
+    }
+
+    tr:nth-child(even){
+    background-color: #D0ECE7;
+    }
+
+
+    th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    }
+
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: orangered;
+}
+
+.main {
+    margin-left: 280px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+.navbar {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border-style: 5px;
+
+}
+
+.navbar .logo {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.dropdown {
+    border-radius: 10px;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    opacity: 1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(253, 6, 6, 0.7);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .odd {
+    float: none;
+    color: black;
+    background-color: rgba(141, 131, 131, 0.75);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content .even {
+    float: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(236, 72, 22, 0.9);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.bgimg-1 {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+    background-position: center;
+    min-height: 400px;
+}
+
+#page-wrapper {
+    overflow: hidden;
+    padding: 5em 0em;
+    border-radius: 10px;
+}
+
+img {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#page h2 {
+    text-transform: uppercase;
+    font-size: 4.6em;
+    font-weight: 300;
+    color: black;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#page h3 {
+    font-size: 1.5em;
+    font-weight: 250;
+    color: #F7DC6F;
+    text-decoration: underline;
+    text-align: center;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#page p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.993);
+    color: khaki;
+}
+
+
+.card {
+    width: 1000px;
+    padding: 10px;
+    background: linear-gradient(to right, lightgreen, limegreen);
+    color: midnightblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: Franklin Gothic;
+    border: 2px solid lightgreen;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.inner {
+    width: 900px;
+    padding: 5px;
+    background: linear-gradient(to left, cyan, lightblue);
+    color: maroon;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-left: 5px solid maroon;
+    border-right: 2px solid azure;
+    border-top: 2px solid azure;
+    border-bottom: 2px solid azure;
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+.inPara {
+    margin-left: 150px;
+    font-size: 20px;
+    color: white;
+}
+
+.capper{
+    font-variant: small-caps;
+}
+
+.inner_b{
+    width:200px;
+    height:30px;
+    text-decoration:none;
+    padding:5px;
+    background-color:darkred;
+    color: khaki;
+    border: 2px solid darkred;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    box-shadow:0 12px 12px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+
+.inner_b:hover{
+    background-color:transparent;
+    color:midnightblue;
+    
+
+}
+    </style>
+</head>
+
+
+<body>
+<body>
+    <div class="sidenav">
+        <a href="introhtml.html">Introduction to HTML</a>
+        <a href="HTMLeditor.html">HTML Editors</a>
+        <a href="basictags.html">Basic HTML Tags</a>
+        <a href="HTMLelements.html">HTML Elements</a>
+        <a href="HTMLattributes.html">HTML Attributes</a>
+        <a href="HTMLparagraphs">HTML Paragraphs</a>
+        <a href="html style.html">HTML Styles</a>
+        <a href="html text formetting.html">HTML Formatting</a>
+        <a href="html quotations.html">HTML Quotations</a>
+        <a href="html comments.html">HTML Comments</a>
+        <a href="html comments.html">HTML Colors</a>
+        <a href="html style with css.html">HTML CSS</a>
+        <a href="wt13c.html">HTML Links</a>
+        <a href="wt14c.html">HTML Images</a>
+        <a href="wt15c.html">HTML Tables</a>
+        <a href="wt16c.html">HTML Lists</a>
+        <a href="wt17c.html">HTML Blocks</a>
+        <a href="wt18c.html">HTML Classes</a>
+        <a href="html_id19.html">HTML Id</a>
+        <a href="html_frames.html">HTML Frames</a>
+        <a href="hyml_forms.html">HTML Forms</a>
+        <a href="html_form_elements.html">HTML Form Elements</a>
+        <a href="Html_input-types.html">HTML Input Types</a>
+        <a href="css syntax and selection.html">CSS Syntax</a>
+        <a href="css insert.html">CSS How to</a>
+        <a href="css colors.html">CSS Colors</a>
+        <a href="css background.html">CSS Backgrounds</a>
+        <a href="css insert.html">CSS How to</a>
+        <a href="30.html">CSS Borders</a>
+        <a href="31.html">CSS Margins</a>
+        <a href="32.html">CSS Padding</a>
+        <a href="33.html">CSS Height/width</a>
+        <a href="34.html">CSS Box Model</a>
+        <a href="35.html">CSS Outline</a>
+        <a href="36_css_text.html">CSS Text</a>
+        <a href="37_css_fonts.html">CSS Fonts</a>
+        <a href="38_css_lists.html">CSS Lists</a>
+        <a href="39_css_tables.html">CSS Tables</a>
+        <a href="40_css_fonts.html">CSS Icons</a>
+        <a href="p1.html">CSS Layout</a>
+        <a href="p2.html">CSS display block</a>
+        <a href="p3.html">CSS Align </a>
+        <a href="p4.html">CSS Opacity</a>
+        <a href="p5.html">CSS Navigaton Bar</a>
+    </div>
+
+<div class="main">
+        <div id="header-wrapper">
+
+            <div id="header" style="padding-top: 50px;padding-bottom: 50px;">
+
+                <div class="navbar">
+
+                    <a class="logo" href="#">
+                        <h1 style="margin-top: 0px;margin-bottom: 0px;">LOGO</h1>
+                    </a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user-circle"></i> Your Account
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a class="odd" href="form.html">Sign In</a>
+                            <a class="even" href="account.html">Sign Up</a>
+                        </div>
+                    </div>
+
+                    <a href="aboutus.html"><i class="fa fa-users"></i> About Us</a>
+                   <a href=".html">CSS</a>
+                    <a href="tutorial.html">HTML</a>
+                    <a href="index.html"><i class="fa fa-home"> Home</i></a>
+                </div>
+
+            </div>
+<div id="page-wrapper" class="bgimg-1">
+            <div id="page" class="container">
+                <p style="font-size:20px ;padding-left: 10%;padding-right: 10%;"> 
+                 <h2><font size=20>About Privacy of SCAD</font></h2>
+                <p style="font-size:20px ;padding-left: 10%;padding-right: 10%;"> 
+                   All the visitors, users, learners, contributors, teachers, and instructors are named as "users"; and  SCAD is termed as "website" everywhere in this document.We are committed to protecting your privacy online. This privacy policy explains what information we collect from you or what information you share with us when you visit the website. We review our policy from time to time, so you are advised to check the latest version.As a user of www.tutorialspoint.com, you must agree to have read our privacy policy before sharing any information with us. This Privacy Policy is incorporated into and subject to the Terms of Use.
+                 </p>
+                <h2><font size=20>Copyright Information</font></h2>
+                <p style="font-size:20px ;padding-left: 10%;padding-right: 10%;">
+                   All pages and graphics on this web site are the property SCAD.Pages, code or other content from SCAD may not be redistributed or reproduced in any way, shape, or form without the written permission of SCAD.Failure to do so is a violation of copyright laws.Our products enable the users to learn via live and recorded instruction, tutoring, and learning services through our proprietary software. The services include, without limitation, facilitating and hosting courses, and taking feedback from users.SCAD holds the right to modify or upgrade its content at any time. If you are at any time dissatisfied with our content, then your sole remedy is to discontinue the use of the content.As a registered user of the website, you agree that we may notify you through email regarding security, privacy, and administrative issues relating to your use of our products.ASDC reserves the absolute right to revise these terms in its sole discretion at any time and without prior notice to you other than by posting the revised terms on the site. Any revisions to the terms are effective upon posting. The terms will be identified as of the most recent date of revision. You should visit this page regularly to ensure your continued acceptance of these terms. Your continued use of the company products after any revision to these terms constitutes your binding acceptance of the revised terms. Notwithstanding the preceding sentences of this section, no revisions to these terms will apply to any dispute between you and the company that arose prior to the date of such revision
+                </p>
+              </div>
+          </div>
+
+          
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="footer">
+            <center>
+                <h4><b>Privacy page Page by KM Sakshi verma -1705918</b></h4>
+                <p>&copy2018 KIIT UNIVERSITY</p>
+                <a href="#" class="social fa fa-facebook"></a>
+                <a href="@Sakshi1730026" class="social fa fa-twitter"></a>
+                <a href="#" class="social fa fa-google"></a>
+                <a href="mailto:vermasakshiverma08@gmail.com" class="social fa fa-envelope"></a>
+            </center>
+        </div>        
+       
+</body
+</html>>
